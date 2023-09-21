@@ -1,0 +1,58 @@
+div.btnSlider {
+    width: 13vw;
+    padding-left: 8vw;
+    position: absolute;
+    bottom: 10%;
+    right: -0%;
+    transition: all .6s;
+
+    &:hover {
+        padding-left: 0vw;
+    }
+
+    @media (max-width:576px) {
+        width: 10vh;
+        padding-left: 7vh;
+    }
+
+    a.topBtn {
+        width: 10rem;
+        height: 10rem;
+
+        &:hover {
+            div {
+                animation: turnaround 1.8s ease-in-out infinite;
+                // animation: name duration timing-function delay iteration-count direction fill-mode;
+            }
+        }
+
+        div {
+            width: 7vw;
+            height: 7vw;
+            min-width: 5rem;
+            min-height: 5rem;
+            max-width: 10rem;
+            max-height: 10rem;
+            display: grid;
+            place-content: center;
+            border-radius: 50%;
+            background: radial-gradient(ellipse 45% 15% at 50% 83%, #ff0, #ffffff10);
+            backdrop-filter: blur(1px);
+
+            &::before {
+                content: 'to top';
+                color: #fff;
+                font-size: 1.25rem;
+                font-weight: 600;
+                position: absolute;
+                top: 49.5%;
+                left: 23%;
+            }
+
+            img {
+                margin: auto;
+                width: 90%;
+            }
+        }
+    }
+}

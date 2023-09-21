@@ -1,0 +1,363 @@
+// 1440px 以下要變
+// 1200px 以下要變
+div.about {
+    display: flex;
+    align-items: center;
+
+    div.main {
+        background-color: #000000;
+        border-radius: 5px;
+
+        div.container {
+            padding-bottom: 2rem;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1.5rem;
+
+            @media (max-width:850px) {
+                gap: 0rem;
+            }
+
+            @media (max-width:800px) {
+                display: none;
+            }
+
+            div.bdLines {
+                background-color: rgba(244, 199, 81, 1);
+                position: absolute;
+                // transition: opacity cubic-bezier(0.7, 0, 0.84, 0) 1s;  最後急消失
+                transition: opacity cubic-bezier(0, 0.55, 0.45, 1) .6s;
+
+                @media (max-width:1440px) {
+                    opacity: 0;
+                }
+
+                &.long {
+                    width: calc(50% - 1.25rem);
+                    height: 1.25rem;
+                }
+
+                &.short {
+                    width: 1.25rem;
+                    height: 50%;
+                }
+
+                &.topBd {
+                    top: 0rem;
+                    left: -1.25rem;
+
+                    &.long {
+                        left: 0rem;
+                    }
+                }
+
+                &.bottomBd {
+                    bottom: 0rem;
+                    right: -1.25rem;
+
+                    &.long {
+                        right: 0rem;
+                    }
+                }
+            }
+        }
+
+        div.slide {
+            display: none;
+            justify-content: center;
+            align-items: center;
+
+            @media (max-width:800px) {
+                display: flex;
+            }
+        }
+
+        .fp-arrow {
+            display: none;
+
+            @media (max-width:800px) {
+                display: unset;
+            }
+
+            &.fp-prev {
+                border-width: 35px 35px 35px 0;
+                border-color: transparent rgba(255, 255, 255, 1) transparent transparent;
+                left: 5px;
+                z-index: 5;
+
+                @media (max-width:450px) {
+                    border-width: 25px 25px 25px 0;
+                }
+            }
+
+            &.fp-next {
+                border-width: 35px 0 35px 35px;
+                border-color: transparent transparent transparent rgba(255, 255, 255, 1);
+                right: 5px;
+                z-index: 5;
+
+                @media (max-width:450px) {
+                    border-width: 25px 0 25px 25px;
+                }
+            }
+        }
+
+        div.col {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 1.5rem;
+
+            @media (max-width:850px) {
+                gap: 0rem;
+            }
+
+            @media (max-width:800px) {
+                padding-top: 10%;
+                min-width: 375px;
+                min-height: 650px;
+                align-items: center;
+                gap: 1.25rem;
+            }
+
+            @media (max-width:576px) {
+                transform: scale(.9);
+            }
+
+            @media (max-width:375px) {
+                transform: scale(.8);
+            }
+
+            div.aboutBlock {
+                padding: 1rem 1.5rem;
+                background-color: rgba(23, 23, 23, 1);
+                border-radius: 20px;
+                width: 22rem;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: center;
+                font-size: 1.5rem;
+                transition: all ease .7s;
+
+                &:hover {
+                    transform: scale(1.1);
+                    border: 3px solid #ffffff9e;
+
+                    h3 {
+                        color: rgb(111, 217, 255);
+                    }
+
+                    &.name {
+                        div.ch {
+                            color: rgb(255, 183, 111);
+                        }
+
+                        div.en {
+                            color: rgb(111, 255, 219);
+                        }
+                    }
+                }
+
+                h3 {
+                    margin-bottom: 1rem;
+                    font-size: 2.8rem;
+                    font-weight: 500;
+                    // justify-self: ;
+                    align-self: start;
+
+                    &.mid {
+                        margin-bottom: unset;
+                        align-self: center;
+                        font-size: 2rem;
+                    }
+                }
+
+                p {
+                    align-self: start;
+                    text-align: start;
+                }
+
+                &.sBlock {
+                    min-height: 9rem;
+                    max-height: 10rem;
+                }
+
+                &.lBlock {
+                    min-height: 28rem;
+                    max-height: 30rem;
+                }
+
+                &.name {
+                    font-family: 'ChenYuluoyan', 'myFont';
+
+                    div.ch {
+                        margin-bottom: -.5rem;
+                        font-size: 4rem;
+                        transition: all ease-out .5s;
+                    }
+
+                    div.en {
+                        margin-top: -.5rem;
+                        font-size: 3rem;
+                        transition: all ease-in .5s;
+                    }
+                }
+
+                &.aboutMe {
+                    span {
+                        display: inline-block;
+                        transition: all ease .5s;
+
+                        &:hover {
+                            color: rgb(255, 216, 153);
+                        }
+                    }
+                }
+
+                &.infos {
+                    justify-content: space-around;
+
+                    div {
+                        align-self: flex-start;
+
+                        p.infoLang {
+                            padding-left: 4rem;
+                        }
+                    }
+
+                    p:not(.nohover):hover {
+                        color: rgba(255, 255, 111);
+                    }
+                }
+
+                &.cvDownload {
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+
+                    a {
+                        height: 120px;
+                        width: 100%;
+                        display: flex;
+                        flex-wrap: nowrap;
+                        justify-content: center;
+                        align-items: center;
+
+                        h3 {
+                            align-self: center;
+                        }
+
+                        div {
+                            margin-left: .5rem;
+                            height: 70px;
+
+                            img {
+                                height: 100%;
+                            }
+                        }
+                    }
+                }
+
+                &.skills {
+                    justify-content: space-around;
+                    // position: relative;
+
+                    p {
+                        width: 100%;
+                        position: relative;
+
+                        &:hover {
+                            color: rgb(255, 255, 153);
+                            transform: scale(1.1);
+                            padding-left: 3%;
+
+                            &::after {
+                                background-color: rgba(244, 199, 81, 1);
+                            }
+                        }
+
+                        &::before {
+                            content: '';
+                            position: absolute;
+                            background-color: rgba(44, 44, 44, 1);
+                            border-radius: 15px;
+                            height: .75rem;
+                            width: 10rem;
+                            top: calc(50% - (.75rem / 2));
+                            left: 45%;
+                        }
+
+                        &::after {
+                            content: '';
+                            position: absolute;
+                            background-color: rgba(173, 203, 238, 1);
+                            border-radius: 15px;
+                            height: .75rem;
+                            top: calc(50% - (.75rem / 2));
+                            left: 45%;
+                            transition: all cubic-bezier(0, 0.55, 0.45, 1) 1s;
+                        }
+
+                        &:nth-child(2)::after {
+                            width: 7rem;
+                        }
+
+                        &:nth-child(3)::after {
+                            width: 7rem;
+                        }
+
+                        &:nth-child(4)::after {
+                            width: 6rem;
+                        }
+
+                        &:nth-child(5)::after {
+                            width: 4.5rem;
+                        }
+
+                        &:nth-child(6)::after {
+                            width: 3.5rem;
+                        }
+
+                        &:nth-child(7)::after {
+                            width: 4rem;
+                        }
+
+                        &:nth-child(8)::after {
+                            width: 5rem;
+                        }
+
+                        &:nth-child(9)::after {
+                            width: 3rem;
+                        }
+                    }
+                }
+
+                &.software {
+                    div.bgContainer {
+                        width: 15rem;
+                        background: url(/assets/styles/images/bg/bgSoftware.png) center/contain;
+                        display: flex;
+                        justify-content: space-evenly;
+                        align-items: center;
+
+                        div {
+                            height: 3.5rem;
+                            transition: all ease .1s;
+
+                            &:hover {
+                                transform: scale(1.3);
+                            }
+
+                            img {
+                                height: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

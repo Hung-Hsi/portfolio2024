@@ -1,0 +1,156 @@
+// Colors
+$color-black: #19182B;
+$color-white: #FFFFFF;
+
+$color-primary-darkest: #293238;
+$color-primary-darker: #0B6F6B;
+$color-primary: #168B86;
+$color-primary-lighter: #22AA96;
+
+// Mixin
+@mixin button-styles {
+    appearance: none;
+    align-items: center;
+    background-color: $color-primary-lighter;
+    border: 4px solid $color-black;
+    border-radius: 50%;
+    box-shadow: inset 0 -8px 0 $color-primary;
+    color: $color-white;
+    cursor: pointer;
+    display: flex;
+    font-size: 0;
+    width: 4.5rem;
+    height: 4.5rem;
+    justify-content: center;
+    text-decoration: none;
+    text-shadow: 0 2px 0 $color-primary;
+
+    &:hover {
+        text-shadow: 0 2px 0 $color-primary,
+            0 0 4px rgba($color-white, 0.5);
+    }
+
+    &:focus,
+    &--active {
+        background-color: $color-primary;
+        box-shadow: inset 0 8px 0 $color-primary-darker;
+        text-shadow: 0 0 8px rgba($color-white, 0.5);
+    }
+
+    i {
+        font-size: 2rem;
+    }
+
+    .icons {
+        width: 2rem;
+        height: 2rem;
+        display: grid;
+        place-content: center;
+
+        img {
+            width: 100%;
+        }
+    }
+}
+
+.buttons {
+    width: 6.5rem;
+    height: 6.5rem;
+    z-index: 1;
+    display: grid;
+    place-content: center;
+    position: fixed;
+    bottom: 100px;
+    left: 100px;
+
+    /* ... 其他樣式 ... */
+    cursor: grab;
+    /* 設置鼠標游標為 'grab' */
+    touch-action: pan-y;
+    /* 禁止行動裝置的預設拖動行為 */
+
+    @media (max-width:756px) {
+        left: 5%;
+        bottom: 9%;
+    }
+
+    &--active {
+        .buttons_ctas {
+            transform: translate(-50%, -50%) rotate(0deg);
+        }
+
+        .buttons_cta {
+            &:nth-child(1) {
+                transform: translate(-110%, -150%) rotate(0deg);
+            }
+
+            &:nth-child(2) {
+                transform: translate(10%, -150%) rotate(0deg);
+            }
+
+            &:nth-child(3) {
+                transform: translate(65%, -50%) rotate(0deg);
+            }
+
+            &:nth-child(4) {
+                transform: translate(10%, 50%) rotate(0deg);
+            }
+
+            &:nth-child(5) {
+                transform: translate(-110%, 50%) rotate(0deg);
+                background: #eaa000;
+            }
+
+            &:nth-child(6) {
+                transform: translate(-165%, -50%) rotate(0deg);
+                background: #eaa000;
+            }
+        }
+    }
+
+    &_toggle {
+        @include button-styles;
+        position: relative;
+        z-index: 1;
+    }
+
+    &_ctas {
+        left: 50%;
+        position: absolute;
+        top: 50%;
+        transform: translate(-50%, -50%) rotate(180deg);
+        transform-origin: center;
+        transition: transform 0.75s ease;
+        z-index: 0;
+    }
+
+    &_cta {
+        @include button-styles;
+        left: 50%;
+        position: absolute;
+        top: 50%;
+        transform: translate(-50%, -50%) rotate(180deg);
+        transform-origin: center;
+        transition: transform 0.2s ease;
+
+        @for $i from 1 through 6 {
+            &:nth-child(#{$i}) {
+                transition-delay: calc(#{$i} * 0.075s);
+                z-index: calc(6 - #{$i});
+            }
+        }
+
+        &:nth-child(5) {
+            box-shadow: inset 0 -8px 0 #ba8001;
+        }
+
+        &:nth-child(6) {
+            box-shadow: inset 0 -8px 0 #ba8001;
+        }
+    }
+
+    &.dragging {
+        cursor: grabbing;
+        /* 鼠標按下時，游標為 'grabbing' */
+    }
+}

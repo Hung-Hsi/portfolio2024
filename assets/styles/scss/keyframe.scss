@@ -1,0 +1,62 @@
+/* 定義呼吸燈的動畫 */
+@keyframes neonBlink {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.4;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes nonBlink {
+    0% {
+        opacity: 0.1;
+    }
+
+    50% {
+        opacity: .9;
+    }
+
+    100% {
+        opacity: 0.1;
+    }
+}
+
+// project 背景閃爍
+@keyframes bgBreath {
+    0% {
+        opacity: 0.01;
+    }
+
+    50% {
+        opacity: .25;
+    }
+
+    100% {
+        opacity: 0.01;
+    }
+}
+
+// topBtn hover 轉一圈
+@keyframes turnaround {
+    0% {
+        transform: rotateY(0deg);
+    }
+
+    40% {
+        transform: rotateY(180deg);
+    }
+
+    80% {
+        transform: rotateY(0deg);
+    }
+
+    100% {
+        transform: rotateY(0deg);
+    }
+}

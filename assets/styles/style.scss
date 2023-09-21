@@ -1,0 +1,159 @@
+@font-face {
+    font-family: "myFont";
+    src: url(../../plugins/字體/清松手寫體2.ttf)
+}
+
+@font-face {
+    font-family: "ChenYuluoyan";
+    src: url(../../plugins/字體/ChenYuluoyan-Thin.ttf)
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'myFont', 'Noto Sans TC', sans-serif;
+
+    .CY {
+        font-family: 'ChenYuluoyan', 'Noto Sans TC', sans-serif;
+    }
+
+    a {
+        text-decoration: none;
+        color: unset;
+
+        &:hover {
+            color: rgba(244, 199, 81, 1);
+        }
+    }
+
+    ::-webkit-scrollbar {
+        width: 10px;
+        height: 10px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: #00b3aa77;
+        height: 3px;
+    }
+
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+
+    @media (max-width:1024px) {
+        font-size: 95%;
+    }
+}
+
+.fp-watermark {
+    display: none;
+}
+
+body {
+    background-image: url("/assets/styles/images/bg/bgtexture.png");
+    position: relative;
+
+
+    @import './scss/keyframe.scss';
+    @import './scss/navButton.scss';
+    @import './scss/topBtn.scss';
+
+    div.section {
+        padding: unset;
+        background-color: rgba(23, 23, 23, 0.92);
+        text-align: center;
+        font-size: 3em;
+        color: white;
+
+        div.main {
+            // border: 1px solid #fff;
+            padding: 0 1.5rem;
+            margin: auto;
+            width: 100%;
+            max-width: 1440px;
+            height: 90vh;
+            min-height: 652px;
+            display: flex;
+            justify-content: center;
+            position: relative;
+
+            div.title {
+                margin: 1rem 4rem;
+                position: absolute;
+                top: 0;
+                right: 0;
+                display: flex;
+
+                h2 {
+                    font-size: 4.5rem;
+                }
+
+                div {
+                    margin-left: 1rem;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+
+            div.container {
+                // border: 1px solid #eeff00;
+                padding: 3rem 0rem 0rem;
+                position: relative;
+                width: 90%;
+                height: 90%;
+                min-height: 616px;
+                display: flex;
+
+                font-size: 2rem;
+
+                @media (max-width:1440px) {
+                    transform: scale(.9);
+                    width: 100%;
+                }
+
+                @media (max-width:1280px) {
+                    transform: scale(.8);
+                    // min-width: 1200px;
+                }
+
+                @media (max-width:1200px) {
+                    width: 100%;
+                    min-width: 992px;
+                }
+
+                @media (max-width:800px) {
+                    min-width: 900px;
+                }
+
+                @media (max-width:756px) {
+                    min-width: 800px;
+                }
+
+                @media (max-width:650px) {
+                    min-width: 750px;
+                }
+
+            }
+
+            @media (max-width: 576px) {
+                div.container {
+                    position: absolute;
+                    left: -12%;
+                    bottom: -5%;
+                    min-width: unset;
+                    width: 124%;
+                    height: 100%;
+                    overflow: auto
+                }
+            }
+        }
+    }
+
+    @import './scss/desktop.scss';
+    @import './scss/about.scss';
+    @import './scss/experience.scss';
+    @import './scss/project.scss';
+    @import './scss/contact.scss';
+
+}
