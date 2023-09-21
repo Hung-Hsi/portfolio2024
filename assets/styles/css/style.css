@@ -371,7 +371,7 @@ body .buttons.dragging {
 body div.btnSlider {
   width: 13vw;
   padding-left: 8vw;
-  position: absolute;
+  position: fixed;
   bottom: 10%;
   right: 0%;
   -webkit-transition: all 0.6s;
