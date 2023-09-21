@@ -275,7 +275,7 @@ div.desktop div.wall div.screen ul.navigator li:not(:last-child) a:hover {
 div.desktop div.table {
   width: 100vw;
   height: 30vh;
-  background: url(/assets/styles/images/bg/bgtabledark.png) center/cover;
+  background: url(../images/bg/bgtabledark.png) center/cover;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

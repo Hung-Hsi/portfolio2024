@@ -6,7 +6,7 @@ div.project::before {
   position: absolute;
   width: 100%;
   height: 100%;
-  background: url(/assets/styles/images/bg/bgline100.png) center/100%;
+  background: url(../images/bg/bgline100.png) center/100%;
   -webkit-animation: bgBreath 15s cubic-bezier(0.85, 0, 0.15, 1) forwards infinite;
           animation: bgBreath 15s cubic-bezier(0.85, 0, 0.15, 1) forwards infinite;
 }
@@ -105,7 +105,7 @@ div.project div.main div.container div.showcase div.perfBoard {
   margin-left: 1.5%;
   width: 34%;
   height: 100%;
-  background: url(/assets/styles/images/bg/woodTexture.png) center/cover;
+  background: url(../images/bg/woodTexture.png) center/cover;
   border-radius: 20px;
   position: relative;
   z-index: 0;
