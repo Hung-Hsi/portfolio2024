@@ -29,7 +29,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
         integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.20/fullpage.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.20/fullpage.css">
     <link rel="stylesheet" href="./assets/styles/css/fullPage.css">
     <link rel="stylesheet" href="./assets/styles/css/style.css">
 
@@ -250,11 +251,22 @@
                             </div>
                         </div>
                         <div class="aboutBlock sBlock cvDownload">
-                            <a role="button" target="_blank" href="./assets/styles/images/CV-Hung Hsi (ch).pdf"
-                                rel="noopener noreferrer" download>
-                                <h3 class="mid">CV download</h3>
-                                <div><img src="./assets/styles/images/Icons/download.png" alt="about"></div>
-                            </a>
+                            <div class="cardContainer">
+                                <div class="card front">
+                                    <a class="cv" role="button" target="_blank" href="./assets/styles/images/CV-Hung Hsi (ch).pdf"
+                                        rel="noopener noreferrer" download>
+                                        <h3 class="mid">中文簡歷</h3>
+                                        <div><img src="./assets/styles/images/Icons/download.png" alt="about"></div>
+                                    </a>
+                                </div>
+                                <div class="card back">
+                                    <a class="cv" role="button" target="_blank" href="./assets/styles/images/CV-Hung Hsi (en).pdf"
+                                        rel="noopener noreferrer" download>
+                                        <h3 class="mid">CV download</h3>
+                                        <div><img src="./assets/styles/images/Icons/download.png" alt="about"></div>
+                                    </a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="col colThree">
@@ -318,11 +330,22 @@
                             </div>
                         </div>
                         <div class="aboutBlock sBlock cvDownload">
-                            <a role="button" target="_blank" href="./assets/styles/images/CV-Hung Hsi (ch).pdf" rel="noopener noreferrer"
-                                download>
-                                <h3 class="mid">CV download</h3>
-                                <div><img src="./assets/styles/images/Icons/download.png" alt="about"></div>
-                            </a>
+                            <div class="cardContainer">
+                                <div class="card front">
+                                    <a class="cv" role="button" target="_blank" href="./assets/styles/images/CV-Hung Hsi (ch).pdf"
+                                        rel="noopener noreferrer" download>
+                                        <h3 class="mid">中文簡歷</h3>
+                                        <div><img src="./assets/styles/images/Icons/download.png" alt="about"></div>
+                                    </a>
+                                </div>
+                                <div class="card back">
+                                    <a class="cv" role="button" target="_blank" href="./assets/styles/images/CV-Hung Hsi (en).pdf"
+                                        rel="noopener noreferrer" download>
+                                        <h3 class="mid">CV download</h3>
+                                        <div><img src="./assets/styles/images/Icons/download.png" alt="about"></div>
+                                    </a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -603,8 +626,7 @@
                             <div class="input-group">
                                 <label for="ur_contact_info">Tel or social media</label>
                                 <br>
-                                <input type="text" placeholder="電話 或 可聯繫社群ID" id="ur_contact_info"
-                                    autocomplete="off">
+                                <input type="text" placeholder="電話 或 可聯繫社群ID" id="ur_contact_info" autocomplete="off">
                             </div>
                             <div class="alert contact_alert"></div>
                             <!-- 詢問內容 -->
@@ -732,8 +754,7 @@
                             <div class="input-group">
                                 <label for="ur_contact_info">Tel or social media</label>
                                 <br>
-                                <input type="text" placeholder="電話 或 可聯繫社群ID" id="ur_contact_info"
-                                    autocomplete="off">
+                                <input type="text" placeholder="電話 或 可聯繫社群ID" id="ur_contact_info" autocomplete="off">
                             </div>
                             <div class="alert contact_alert"></div>
                             <!-- 詢問內容 -->
@@ -822,6 +843,8 @@
     <script src="./assets/js/fullpageExtensionMin.js"></script>
     <!-- desktop keyboard -->
     <script src="./assets/js/typingonKeyboard.js"></script>
+    <!-- CV flipped -->
+    <script src="./assets/js/cvFlipped.js"></script>
     <!-- project -->
     <script src="./assets/js/projectView.js"></script>
     <!-- contact form & phone time-->

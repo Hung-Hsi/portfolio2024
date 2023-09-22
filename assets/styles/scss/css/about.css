@@ -176,18 +176,18 @@ div.about div.main div.col div.aboutBlock {
   -webkit-transition: all ease 0.7s;
   transition: all ease 0.7s;
 }
-div.about div.main div.col div.aboutBlock:hover {
+div.about div.main div.col div.aboutBlock:not(.cvDownload):hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
   border: 3px solid rgba(255, 255, 255, 0.6196078431);
 }
-div.about div.main div.col div.aboutBlock:hover h3 {
+div.about div.main div.col div.aboutBlock:not(.cvDownload):hover h3 {
   color: rgb(111, 217, 255);
 }
-div.about div.main div.col div.aboutBlock:hover.name div.ch {
+div.about div.main div.col div.aboutBlock:not(.cvDownload):hover.name div.ch {
   color: rgb(255, 183, 111);
 }
-div.about div.main div.col div.aboutBlock:hover.name div.en {
+div.about div.main div.col div.aboutBlock:not(.cvDownload):hover.name div.en {
   color: rgb(111, 255, 219);
 }
 div.about div.main div.col div.aboutBlock h3 {
@@ -254,6 +254,7 @@ div.about div.main div.col div.aboutBlock.infos p:not(.nohover):hover {
   color: rgb(255, 255, 111);
 }
 div.about div.main div.col div.aboutBlock.cvDownload {
+  position: relative;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -265,9 +266,67 @@ div.about div.main div.col div.aboutBlock.cvDownload {
       -ms-flex-align: center;
           align-items: center;
 }
-div.about div.main div.col div.aboutBlock.cvDownload a {
-  height: 120px;
+div.about div.main div.col div.aboutBlock.cvDownload:hover {
+  border: 3px solid rgba(255, 255, 255, 0.6196078431);
+}
+div.about div.main div.col div.aboutBlock.cvDownload:hover div.cardContainer:hover {
+  -webkit-transform: rotateY(0deg);
+          transform: rotateY(0deg);
+  -webkit-animation: unset;
+          animation: unset;
+}
+div.about div.main div.col div.aboutBlock.cvDownload:hover div.cardContainer.flipped:hover {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  -webkit-animation: unset;
+          animation: unset;
+}
+div.about div.main div.col div.aboutBlock.cvDownload div.cardContainer,
+div.about div.main div.col div.aboutBlock.cvDownload .card {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  border-radius: 20px;
+}
+div.about div.main div.col div.aboutBlock.cvDownload div.cardContainer {
+  height: 100%;
+  position: absolute;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transition: -webkit-transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: -webkit-transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275), -webkit-transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  -webkit-box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  -webkit-animation: CVFlipped 4s ease infinite;
+          animation: CVFlipped 4s ease infinite;
+  -webkit-transform: rotateY(30deg);
+          transform: rotateY(30deg);
+}
+div.about div.main div.col div.aboutBlock.cvDownload div.cardContainer div.card {
+  z-index: 1;
+}
+div.about div.main div.col div.aboutBlock.cvDownload div.cardContainer div.card.front {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+div.about div.main div.col div.aboutBlock.cvDownload div.cardContainer div.card.back {
+  display: none;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+div.about div.main div.col div.aboutBlock.cvDownload div.cardContainer div.card a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -279,17 +338,37 @@ div.about div.main div.col div.aboutBlock.cvDownload a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-transition: all 0.6s;
+  transition: all 0.6s;
 }
-div.about div.main div.col div.aboutBlock.cvDownload a h3 {
+div.about div.main div.col div.aboutBlock.cvDownload div.cardContainer div.card a:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+div.about div.main div.col div.aboutBlock.cvDownload div.cardContainer div.card a h3 {
   -ms-flex-item-align: center;
       align-self: center;
 }
-div.about div.main div.col div.aboutBlock.cvDownload a div {
+div.about div.main div.col div.aboutBlock.cvDownload div.cardContainer div.card a div {
   margin-left: 0.5rem;
   height: 70px;
 }
-div.about div.main div.col div.aboutBlock.cvDownload a div img {
+div.about div.main div.col div.aboutBlock.cvDownload div.cardContainer div.card a div img {
   height: 100%;
+}
+div.about div.main div.col div.aboutBlock.cvDownload div.cardContainer.flipped {
+  -webkit-transform: rotateY(210deg);
+          transform: rotateY(210deg);
+  -webkit-animation: CVFlippedBack 4s ease infinite;
+          animation: CVFlippedBack 4s ease infinite;
+}
+div.about div.main div.col div.aboutBlock.cvDownload div.cardContainer.flipped div.front {
+  display: none;
+}
+div.about div.main div.col div.aboutBlock.cvDownload div.cardContainer.flipped div.back {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 div.about div.main div.col div.aboutBlock.skills {
   -ms-flex-pack: distribute;
