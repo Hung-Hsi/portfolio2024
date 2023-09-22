@@ -54,14 +54,22 @@ $color-primary-lighter: #22AA96;
 }
 
 .buttons {
-    width: 6.5rem;
-    height: 6.5rem;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
     z-index: 1;
     display: grid;
     place-content: center;
     position: fixed;
     bottom: 100px;
     left: 100px;
+
+    &::before {
+        content: '';
+        position: absolute;
+        border-radius: 50%;
+        animation: borderWaveIn .5s cubic-bezier(0.5, 0, 0.75, 0) 1;
+    }
 
     /* ... 其他樣式 ... */
     cursor: grab;
@@ -75,6 +83,13 @@ $color-primary-lighter: #22AA96;
     }
 
     &--active {
+        &::before {
+            content: '';
+            position: absolute;
+            border-radius: 50%;
+            animation: borderWaveOut .7s cubic-bezier(0, 0.55, 0.45, 1) 1;
+        }
+
         .buttons_ctas {
             transform: translate(-50%, -50%) rotate(0deg);
         }

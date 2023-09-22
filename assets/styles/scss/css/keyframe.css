@@ -102,3 +102,107 @@
             transform: rotateY(0deg);
   }
 }
+@-webkit-keyframes borderWaveOut {
+  0% {
+    top: calc(50% - 0.75rem);
+    left: calc(50% - 0.75rem);
+    width: 0rem;
+    height: 0rem;
+    border: 0.75rem double #ffffff;
+    opacity: 0.8;
+  }
+  50% {
+    top: calc(50% - 5.25rem);
+    left: calc(50% - 5.25rem);
+    width: 9rem;
+    height: 9rem;
+    border: 0.75rem double #ffffff;
+    opacity: 0.4;
+  }
+  100% {
+    top: calc(50% - 9.75rem);
+    left: calc(50% - 9.75rem);
+    width: 18rem;
+    height: 18rem;
+    border: 0.75rem double #ffffff;
+    opacity: 0;
+  }
+}
+@keyframes borderWaveOut {
+  0% {
+    top: calc(50% - 0.75rem);
+    left: calc(50% - 0.75rem);
+    width: 0rem;
+    height: 0rem;
+    border: 0.75rem double #ffffff;
+    opacity: 0.8;
+  }
+  50% {
+    top: calc(50% - 5.25rem);
+    left: calc(50% - 5.25rem);
+    width: 9rem;
+    height: 9rem;
+    border: 0.75rem double #ffffff;
+    opacity: 0.4;
+  }
+  100% {
+    top: calc(50% - 9.75rem);
+    left: calc(50% - 9.75rem);
+    width: 18rem;
+    height: 18rem;
+    border: 0.75rem double #ffffff;
+    opacity: 0;
+  }
+}
+@-webkit-keyframes borderWaveIn {
+  0% {
+    top: calc(50% - 8.25rem);
+    left: calc(50% - 8.25rem);
+    width: 15rem;
+    height: 15rem;
+    border: 0.75rem double #ffffff;
+    opacity: 0.4;
+  }
+  50% {
+    top: calc(50% - 4.5rem);
+    left: calc(50% - 4.5rem);
+    width: 7.5rem;
+    height: 7.5rem;
+    border: 0.75rem double #ffffff;
+    opacity: 0.2;
+  }
+  100% {
+    top: calc(50% - 0.75rem);
+    left: calc(50% - 0.75rem);
+    width: 0rem;
+    height: 0rem;
+    border: 0.75rem double #ffffff;
+    opacity: 0;
+  }
+}
+@keyframes borderWaveIn {
+  0% {
+    top: calc(50% - 8.25rem);
+    left: calc(50% - 8.25rem);
+    width: 15rem;
+    height: 15rem;
+    border: 0.75rem double #ffffff;
+    opacity: 0.4;
+  }
+  50% {
+    top: calc(50% - 4.5rem);
+    left: calc(50% - 4.5rem);
+    width: 7.5rem;
+    height: 7.5rem;
+    border: 0.75rem double #ffffff;
+    opacity: 0.2;
+  }
+  100% {
+    top: calc(50% - 0.75rem);
+    left: calc(50% - 0.75rem);
+    width: 0rem;
+    height: 0rem;
+    border: 0.75rem double #ffffff;
+    opacity: 0;
+  }
+}

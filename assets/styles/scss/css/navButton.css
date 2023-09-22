@@ -1,7 +1,8 @@
 @charset "UTF-8";
 .buttons {
-  width: 6.5rem;
-  height: 6.5rem;
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
   z-index: 1;
   display: grid;
   place-content: center;
@@ -16,11 +17,25 @@
       touch-action: pan-y;
   /* 禁止行動裝置的預設拖動行為 */
 }
+.buttons::before {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  -webkit-animation: borderWaveIn 0.5s cubic-bezier(0.5, 0, 0.75, 0) 1;
+          animation: borderWaveIn 0.5s cubic-bezier(0.5, 0, 0.75, 0) 1;
+}
 @media (max-width: 756px) {
   .buttons {
     left: 5%;
     bottom: 9%;
   }
+}
+.buttons--active::before {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  -webkit-animation: borderWaveOut 0.7s cubic-bezier(0, 0.55, 0.45, 1) 1;
+          animation: borderWaveOut 0.7s cubic-bezier(0, 0.55, 0.45, 1) 1;
 }
 .buttons--active .buttons_ctas {
   -webkit-transform: translate(-50%, -50%) rotate(0deg);

@@ -60,3 +60,64 @@
         transform: rotateY(0deg);
     }
 }
+
+
+// border 漣漪往外
+@keyframes borderWaveOut {
+    0% {
+        top: calc(50% - 1.5rem / 2);
+        left: calc(50% - 1.5rem / 2);
+        width: 0rem;
+        height: 0rem;
+        border: .75rem double #ffffff;
+        opacity: .8;
+    }
+
+    50% {
+        top: calc(50% - 10.5rem / 2);
+        left: calc(50% - 10.5rem / 2);
+        width: 9rem;
+        height: 9rem;
+        border: .75rem double #ffffff;
+        opacity: .4;
+    }
+
+    100% {
+        top: calc(50% - 19.5rem / 2);
+        left: calc(50% - 19.5rem / 2);
+        width: 18rem;
+        height: 18rem;
+        border: .75rem double #ffffff;
+        opacity: 0;
+    }
+}
+
+// border 漣漪往內
+@keyframes borderWaveIn {
+    0% {
+        top: calc(50% - 16.5rem / 2);
+        left: calc(50% - 16.5rem / 2);
+        width: 15rem;
+        height: 15rem;
+        border: .75rem double #ffffff;
+        opacity: .4;
+    }
+
+    50% {
+        top: calc(50% - 9rem / 2);
+        left: calc(50% - 9rem / 2);
+        width: 7.5rem;
+        height: 7.5rem;
+        border: .75rem double #ffffff;
+        opacity: .2;
+    }
+
+    100% {
+        top: calc(50% - 1.5rem / 2);
+        left: calc(50% - 1.5rem / 2);
+        width: 0rem;
+        height: 0rem;
+        border: .75rem double #ffffff;
+        opacity: 0;
+    }
+}
