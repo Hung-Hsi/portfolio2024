@@ -1029,7 +1029,7 @@ body div.desktop div.wall div.screen ul.navigator li:not(:last-child) a:hover {
 body div.desktop div.table {
   width: 100vw;
   height: 30vh;
-  background: url(/assets/styles/images/bg/bgtabledark.png) center/cover;
+  background: url(../images/bg/bgtabledark.png) center/cover;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1647,7 +1647,7 @@ body div.about div.main div.col div.aboutBlock.skills p:nth-child(9)::after {
 }
 body div.about div.main div.col div.aboutBlock.software div.bgContainer {
   width: 15rem;
-  background: url(/assets/styles/images/bg/bgSoftware.png) center/contain;
+  background: url(../images/bg/bgSoftware.png) center/contain;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1740,7 +1740,7 @@ body div.experience div.main div.container div.folderBox div.folder.bgFolder {
   height: 100%;
   bottom: 0%;
   left: 0;
-  background: url(/assets/styles/images/bg/lclipgray1.png) no-repeat center/contain;
+  background: url(../images/bg/lclipgray1.png) no-repeat center/contain;
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
 }
@@ -1751,7 +1751,7 @@ body div.experience div.main div.container div.folderBox div.folder.bgFolder::be
   height: 100%;
   left: -25%;
   bottom: -8%;
-  background: url(/assets/styles/images/bg/lclipwh.png) no-repeat center/contain;
+  background: url(../images/bg/lclipwh.png) no-repeat center/contain;
   -webkit-transform: rotate(15deg);
           transform: rotate(15deg);
   z-index: 1;
@@ -1768,7 +1768,7 @@ body div.experience div.main div.container div.folderBox div.folder.education {
   height: 100%;
   bottom: 0%;
   left: 0;
-  background: url(/assets/styles/images/bg/lclipgray1.png) no-repeat center/contain;
+  background: url(../images/bg/lclipgray1.png) no-repeat center/contain;
 }
 body div.experience div.main div.container div.folderBox div.folder.works {
   z-index: 1;
@@ -1776,7 +1776,7 @@ body div.experience div.main div.container div.folderBox div.folder.works {
   height: 100%;
   bottom: 8%;
   left: 10%;
-  background: url(/assets/styles/images/bg/lclipwh.png) no-repeat center/contain;
+  background: url(../images/bg/lclipwh.png) no-repeat center/contain;
   -webkit-transform: rotate(15deg);
           transform: rotate(15deg);
   -webkit-transition: all ease 1s;
@@ -1954,7 +1954,7 @@ body div.experience div.main div.container div.folderBox div.folder div.content 
   left: -35px;
   width: 30px;
   height: 30px;
-  background: url(/assets/styles/images/Icons/edu.png);
+  background: url(../images/Icons/edu.png);
 }
 body div.experience div.main div.container div.folderBox div.folder div.content div.degree div.getTime p.years {
   position: absolute;
@@ -1989,7 +1989,7 @@ body div.experience div.main div.container div.folderBox div.folder div.content 
   left: -35px;
   width: 30px;
   height: 30px;
-  background: url(/assets/styles/images/Icons/job.png);
+  background: url(../images/Icons/job.png);
 }
 body div.experience div.main div.container div.folderBox div.folder div.content div.jobs p.desc {
   height: 0;
@@ -2023,7 +2023,7 @@ body div.project::before {
   position: absolute;
   width: 100%;
   height: 100%;
-  background: url(/assets/styles/images/bg/bgline100.png) center/100%;
+  background: url(../images/bg/bgline100.png) center/100%;
   -webkit-animation: bgBreath 15s cubic-bezier(0.85, 0, 0.15, 1) forwards infinite;
           animation: bgBreath 15s cubic-bezier(0.85, 0, 0.15, 1) forwards infinite;
 }
@@ -2122,7 +2122,7 @@ body div.project div.main div.container div.showcase div.perfBoard {
   margin-left: 1.5%;
   width: 34%;
   height: 100%;
-  background: url(/assets/styles/images/bg/woodTexture.png) center/cover;
+  background: url(../images/bg/woodTexture.png) center/cover;
   border-radius: 20px;
   position: relative;
   z-index: 0;
@@ -2498,7 +2498,7 @@ body div.contact div.main div.contactInfo div.phoneBg::before {
   top: 0%;
   left: 5%;
   background: #000000;
-  background: url(/assets/styles/images/bg/phonebg.png) no-repeat center/cover;
+  background: url(../images/bg/phonebg.png) no-repeat center/cover;
   z-index: -1;
 }
 body div.contact div.main div.contactInfo div.phoneBg::after {
@@ -2508,7 +2508,7 @@ body div.contact div.main div.contactInfo div.phoneBg::after {
   position: absolute;
   top: 0%;
   left: 0%;
-  background: url(/assets/styles/images/bg/phonebd.png) no-repeat center/cover;
+  background: url(../images/bg/phonebd.png) no-repeat center/cover;
   z-index: -1;
 }
 body div.contact div.main div.contactInfo div.phoneBg div.phoneContainer {
@@ -2556,14 +2556,14 @@ body div.contact div.main div.contactInfo div.phoneBg div.phoneContainer div.pho
 body div.contact div.main div.contactInfo div.phoneBg div.phoneContainer div.phoneHead div.headRight {
   width: 1rem;
   height: 1rem;
-  background: url(/assets/styles/images/Icons/battery.png) no-repeat top/contain;
+  background: url(../images/Icons/battery.png) no-repeat top/contain;
   position: relative;
 }
 body div.contact div.main div.contactInfo div.phoneBg div.phoneContainer div.phoneHead div.headRight::before {
   content: "";
   width: 100%;
   height: 58%;
-  background: url(/assets/styles/images/Icons/wifi.png) no-repeat center/contain;
+  background: url(../images/Icons/wifi.png) no-repeat center/contain;
   position: absolute;
   top: 0;
   right: 1.1rem;
@@ -2572,7 +2572,7 @@ body div.contact div.main div.contactInfo div.phoneBg div.phoneContainer div.pho
   content: "";
   width: 100%;
   height: 50%;
-  background: url(/assets/styles/images/Icons/signal.png) no-repeat center/contain;
+  background: url(../images/Icons/signal.png) no-repeat center/contain;
   position: absolute;
   top: 0;
   right: 1.95rem;
@@ -2726,7 +2726,7 @@ body div.contact div.main div.contactMsg::before {
   content: "";
   width: 15%;
   height: 10%;
-  background: url(/assets/styles/images/Icons/arrow.png) no-repeat center/contain;
+  background: url(../images/Icons/arrow.png) no-repeat center/contain;
   position: absolute;
   bottom: 20%;
   right: 7.5%;
@@ -2918,7 +2918,7 @@ body div.contact div.main div.contactMsg form div.formBtn button#submit span {
 body div.contact div.main div.contactMsg form div.formBtn button#submit div.btnIcon {
   width: 1.5rem;
   height: 1.5rem;
-  background: url(/assets/styles/images/Icons/submitIcon.png) no-repeat center/contain;
+  background: url(../images/Icons/submitIcon.png) no-repeat center/contain;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
 }
