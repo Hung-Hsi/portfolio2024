@@ -82,6 +82,11 @@ $color-primary-lighter: #22AA96;
         bottom: 9%;
     }
 
+    @media (max-width:576px) {
+        width: 5rem;
+        height: 5rem;
+    }
+
     &--active {
         &::before {
             content: '';

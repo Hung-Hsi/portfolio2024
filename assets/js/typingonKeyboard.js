@@ -3,7 +3,7 @@
 // Wait for the document to be fully loaded
 document.addEventListener("DOMContentLoaded", function () {
     // Set the text to be typed
-    let textToType = "Oh hi ! " + " I'm Chang Hung-Hsi. Welcome to my portfolio ! ! !";
+    let textToType = "Oh hi ! " + " I'm Chang Hung-Hsi." + " Welcome to my portfolio ! ! !";
 
     // Get the typing box element
     const typingTitle = document.getElementById("typingTitle");

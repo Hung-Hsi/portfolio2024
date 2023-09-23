@@ -66,6 +66,10 @@ div.contact div.main div.slide {
       -ms-flex-align: center;
           align-items: center;
 }
+div.contact div.main div.slide ::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+}
 @media (max-width: 576px) {
   div.contact div.main div.slide {
     display: -webkit-box;

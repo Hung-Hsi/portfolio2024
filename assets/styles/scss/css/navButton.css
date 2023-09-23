@@ -30,6 +30,12 @@
     bottom: 9%;
   }
 }
+@media (max-width: 576px) {
+  .buttons {
+    width: 5rem;
+    height: 5rem;
+  }
+}
 .buttons--active::before {
   content: "";
   position: absolute;

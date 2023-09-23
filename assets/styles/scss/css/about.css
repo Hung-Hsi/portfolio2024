@@ -140,10 +140,6 @@ div.about div.main div.col {
         -ms-flex-align: center;
             align-items: center;
     gap: 1.25rem;
-  }
-}
-@media (max-width: 576px) {
-  div.about div.main div.col {
     -webkit-transform: scale(0.9);
             transform: scale(0.9);
   }

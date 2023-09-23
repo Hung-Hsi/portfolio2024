@@ -20,7 +20,7 @@ div.desktop {
             left: 0;
 
             background: linear-gradient(rgba(255, 255, 255, 0) 90%, rgba(38, 215, 255, 0.15));
-            z-index: 2;
+            // z-index: 2;
         }
 
         &::after {
@@ -460,6 +460,10 @@ div.desktop {
                     transform: perspective(800px) translateZ(30px);
                 }
             }
+        }
+
+        @media (max-width:576px) {
+            opacity: 0;
         }
     }
 }

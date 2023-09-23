@@ -11,7 +11,7 @@ div.btnSlider {
     }
 
     @media (max-width:576px) {
-        width: 10vh;
+        width: 12vh;
         padding-left: 7vh;
     }
 
@@ -46,6 +46,10 @@ div.btnSlider {
                 position: absolute;
                 top: 49.5%;
                 left: 23%;
+
+                @media (max-width:576px) {
+                    font-size: 0rem;
+                }
             }
 
             img {

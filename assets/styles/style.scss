@@ -78,7 +78,7 @@ body {
             position: relative;
 
             div.title {
-                margin: 1rem 4rem;
+                margin: 1rem 4rem 0 0;
                 position: absolute;
                 top: 0;
                 right: 0;
@@ -90,9 +90,25 @@ body {
 
                 div {
                     margin-left: 1rem;
+                    height: 4.5rem;
                     display: flex;
                     justify-content: center;
                     align-items: center;
+
+                    img {
+                        height: 100%;
+                    }
+                }
+
+                @media (max-width:576px) {
+                    // margin: .5rem 2rem 0 0;
+
+                    h2 {
+                        font-size: 3rem;
+                    }
+                    div{
+                        height: 3rem;
+                    }
                 }
             }
 

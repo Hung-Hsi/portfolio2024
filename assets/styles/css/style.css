@@ -374,6 +374,12 @@ body .buttons::before {
     bottom: 9%;
   }
 }
+@media (max-width: 576px) {
+  body .buttons {
+    width: 5rem;
+    height: 5rem;
+  }
+}
 body .buttons--active::before {
   content: "";
   position: absolute;
@@ -589,7 +595,7 @@ body div.btnSlider:hover {
 }
 @media (max-width: 576px) {
   body div.btnSlider {
-    width: 10vh;
+    width: 12vh;
     padding-left: 7vh;
   }
 }
@@ -624,6 +630,11 @@ body div.btnSlider a.topBtn div::before {
   top: 49.5%;
   left: 23%;
 }
+@media (max-width: 576px) {
+  body div.btnSlider a.topBtn div::before {
+    font-size: 0rem;
+  }
+}
 body div.btnSlider a.topBtn div img {
   margin: auto;
   width: 90%;
@@ -651,7 +662,7 @@ body div.section div.main {
   position: relative;
 }
 body div.section div.main div.title {
-  margin: 1rem 4rem;
+  margin: 1rem 4rem 0 0;
   position: absolute;
   top: 0;
   right: 0;
@@ -664,6 +675,7 @@ body div.section div.main div.title h2 {
 }
 body div.section div.main div.title div {
   margin-left: 1rem;
+  height: 4.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -673,6 +685,17 @@ body div.section div.main div.title div {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+body div.section div.main div.title div img {
+  height: 100%;
+}
+@media (max-width: 576px) {
+  body div.section div.main div.title h2 {
+    font-size: 3rem;
+  }
+  body div.section div.main div.title div {
+    height: 3rem;
+  }
 }
 body div.section div.main div.container {
   padding: 3rem 0rem 0rem;
@@ -754,7 +777,6 @@ body div.desktop div.wall::before {
   left: 0;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(90%, rgba(255, 255, 255, 0)), to(rgba(38, 215, 255, 0.15)));
   background: linear-gradient(rgba(255, 255, 255, 0) 90%, rgba(38, 215, 255, 0.15));
-  z-index: 2;
 }
 body div.desktop div.wall::after {
   content: "";
@@ -1188,6 +1210,11 @@ body div.desktop div.table div.keyboard div.R5 div.key {
   -webkit-transform: perspective(800px) translateZ(30px);
           transform: perspective(800px) translateZ(30px);
 }
+@media (max-width: 576px) {
+  body div.desktop div.table {
+    opacity: 0;
+  }
+}
 body div.about {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1330,10 +1357,6 @@ body div.about div.main div.col {
         -ms-flex-align: center;
             align-items: center;
     gap: 1.25rem;
-  }
-}
-@media (max-width: 576px) {
-  body div.about div.main div.col {
     -webkit-transform: scale(0.9);
             transform: scale(0.9);
   }
@@ -1504,7 +1527,6 @@ body div.about div.main div.col div.aboutBlock.cvDownload div.cardContainer {
           transform: rotateY(30deg);
 }
 body div.about div.main div.col div.aboutBlock.cvDownload div.cardContainer div.card {
-  padding: 0 1rem;
   z-index: 1;
 }
 body div.about div.main div.col div.aboutBlock.cvDownload div.cardContainer div.card.front {
@@ -2374,6 +2396,10 @@ body div.contact div.main div.slide {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+body div.contact div.main div.slide ::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
 }
 @media (max-width: 576px) {
   body div.contact div.main div.slide {
