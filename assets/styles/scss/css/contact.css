@@ -167,7 +167,7 @@ div.contact div.main div.contactInfo div.phoneBg::before {
   top: 0%;
   left: 5%;
   background: #000000;
-  background: url(../images/bg/phonebg.png) no-repeat center/cover;
+  background: url(/assets/styles/images/bg/phonebg.png) no-repeat center/cover;
   z-index: -1;
 }
 div.contact div.main div.contactInfo div.phoneBg::after {
@@ -177,7 +177,7 @@ div.contact div.main div.contactInfo div.phoneBg::after {
   position: absolute;
   top: 0%;
   left: 0%;
-  background: url(../images/bg/phonebd.png) no-repeat center/cover;
+  background: url(/assets/styles/images/bg/phonebd.png) no-repeat center/cover;
   z-index: -1;
 }
 div.contact div.main div.contactInfo div.phoneBg div.phoneContainer {
@@ -225,14 +225,14 @@ div.contact div.main div.contactInfo div.phoneBg div.phoneContainer div.phoneHea
 div.contact div.main div.contactInfo div.phoneBg div.phoneContainer div.phoneHead div.headRight {
   width: 1rem;
   height: 1rem;
-  background: url(../images/Icons/battery.png) no-repeat top/contain;
+  background: url(/assets/styles/images/Icons/battery.png) no-repeat top/contain;
   position: relative;
 }
 div.contact div.main div.contactInfo div.phoneBg div.phoneContainer div.phoneHead div.headRight::before {
   content: "";
   width: 100%;
   height: 58%;
-  background: url(../images/Icons/wifi.png) no-repeat center/contain;
+  background: url(/assets/styles/images/Icons/wifi.png) no-repeat center/contain;
   position: absolute;
   top: 0;
   right: 1.1rem;
@@ -241,7 +241,7 @@ div.contact div.main div.contactInfo div.phoneBg div.phoneContainer div.phoneHea
   content: "";
   width: 100%;
   height: 50%;
-  background: url(../images/Icons/signal.png) no-repeat center/contain;
+  background: url(/assets/styles/images/Icons/signal.png) no-repeat center/contain;
   position: absolute;
   top: 0;
   right: 1.95rem;
@@ -395,7 +395,7 @@ div.contact div.main div.contactMsg::before {
   content: "";
   width: 15%;
   height: 10%;
-  background: url(../images/Icons/arrow.png) no-repeat center/contain;
+  background: url(/assets/styles/images/Icons/arrow.png) no-repeat center/contain;
   position: absolute;
   bottom: 20%;
   right: 7.5%;
@@ -587,7 +587,7 @@ div.contact div.main div.contactMsg form div.formBtn button#submit span {
 div.contact div.main div.contactMsg form div.formBtn button#submit div.btnIcon {
   width: 1.5rem;
   height: 1.5rem;
-  background: url(../images/Icons/submitIcon.png) no-repeat center/contain;
+  background: url(/assets/styles/images/Icons/submitIcon.png) no-repeat center/contain;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
 }

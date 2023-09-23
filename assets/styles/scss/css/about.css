@@ -430,7 +430,7 @@ div.about div.main div.col div.aboutBlock.skills p:nth-child(9)::after {
 }
 div.about div.main div.col div.aboutBlock.software div.bgContainer {
   width: 15rem;
-  background: url(../images/bg/bgSoftware.png) center/contain;
+  background: url(/assets/styles/images/bg/bgSoftware.png) center/contain;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

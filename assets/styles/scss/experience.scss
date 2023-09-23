@@ -53,7 +53,7 @@ div.experience {
                         height: calc(100%);
                         bottom: 0%;
                         left: 0;
-                        background: url(../images/bg/lclipgray1.png) no-repeat center/contain;
+                        background: url(/assets/styles/images/bg/lclipgray1.png) no-repeat center/contain;
                         transform: rotate(180deg);
 
                         &::before {
@@ -63,7 +63,7 @@ div.experience {
                             height: 100%;
                             left: -25%;
                             bottom: -8%;
-                            background: url(../images/bg/lclipwh.png) no-repeat center/contain;
+                            background: url(/assets/styles/images/bg/lclipwh.png) no-repeat center/contain;
 
                             transform: rotate(15deg);
                             z-index: 1;
@@ -81,7 +81,7 @@ div.experience {
                         height: calc(100%);
                         bottom: 0%;
                         left: 0;
-                        background: url(../images/bg/lclipgray1.png) no-repeat center/contain;
+                        background: url(/assets/styles/images/bg/lclipgray1.png) no-repeat center/contain;
                     }
 
                     &.works {
@@ -90,7 +90,7 @@ div.experience {
                         height: calc(100%);
                         bottom: 8%;
                         left: 10%;
-                        background: url(../images/bg/lclipwh.png) no-repeat center/contain;
+                        background: url(/assets/styles/images/bg/lclipwh.png) no-repeat center/contain;
 
                         transform: rotate(15deg);
                         transition: all ease 1s;
@@ -259,7 +259,7 @@ div.experience {
                                             left: -35px;
                                             width: 30px;
                                             height: 30px;
-                                            background: url(../images/Icons/edu.png);
+                                            background: url(/assets/styles/images/Icons/edu.png);
                                         }
                                     }
 
@@ -293,7 +293,7 @@ div.experience {
                                     left: -35px;
                                     width: 30px;
                                     height: 30px;
-                                    background: url(../images/Icons/job.png);
+                                    background: url(/assets/styles/images/Icons/job.png);
                                 }
                             }
 

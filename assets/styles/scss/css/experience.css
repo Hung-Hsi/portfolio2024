@@ -68,7 +68,7 @@ div.experience div.main div.container div.folderBox div.folder.bgFolder {
   height: 100%;
   bottom: 0%;
   left: 0;
-  background: url(../images/bg/lclipgray1.png) no-repeat center/contain;
+  background: url(/assets/styles/images/bg/lclipgray1.png) no-repeat center/contain;
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
 }
@@ -79,7 +79,7 @@ div.experience div.main div.container div.folderBox div.folder.bgFolder::before 
   height: 100%;
   left: -25%;
   bottom: -8%;
-  background: url(../images/bg/lclipwh.png) no-repeat center/contain;
+  background: url(/assets/styles/images/bg/lclipwh.png) no-repeat center/contain;
   -webkit-transform: rotate(15deg);
           transform: rotate(15deg);
   z-index: 1;
@@ -96,7 +96,7 @@ div.experience div.main div.container div.folderBox div.folder.education {
   height: 100%;
   bottom: 0%;
   left: 0;
-  background: url(../images/bg/lclipgray1.png) no-repeat center/contain;
+  background: url(/assets/styles/images/bg/lclipgray1.png) no-repeat center/contain;
 }
 div.experience div.main div.container div.folderBox div.folder.works {
   z-index: 1;
@@ -104,7 +104,7 @@ div.experience div.main div.container div.folderBox div.folder.works {
   height: 100%;
   bottom: 8%;
   left: 10%;
-  background: url(../images/bg/lclipwh.png) no-repeat center/contain;
+  background: url(/assets/styles/images/bg/lclipwh.png) no-repeat center/contain;
   -webkit-transform: rotate(15deg);
           transform: rotate(15deg);
   -webkit-transition: all ease 1s;
@@ -282,7 +282,7 @@ div.experience div.main div.container div.folderBox div.folder div.content div.d
   left: -35px;
   width: 30px;
   height: 30px;
-  background: url(../images/Icons/edu.png);
+  background: url(/assets/styles/images/Icons/edu.png);
 }
 div.experience div.main div.container div.folderBox div.folder div.content div.degree div.getTime p.years {
   position: absolute;
@@ -317,7 +317,7 @@ div.experience div.main div.container div.folderBox div.folder div.content div.j
   left: -35px;
   width: 30px;
   height: 30px;
-  background: url(../images/Icons/job.png);
+  background: url(/assets/styles/images/Icons/job.png);
 }
 div.experience div.main div.container div.folderBox div.folder div.content div.jobs p.desc {
   height: 0;
