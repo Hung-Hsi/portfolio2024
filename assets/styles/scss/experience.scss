@@ -23,8 +23,8 @@ div.experience {
                 align-items: center;
             }
 
-            @media (max-width:420px) {
-                overflow: hidden;
+            @media (max-width:480px) {
+                overflow-x: hidden;
             }
 
             div.folderBox {
@@ -193,12 +193,25 @@ div.experience {
                             left: 1.5rem;
 
                             &:hover {
-                                left: 3.5rem;
+                                left: 30%;
                                 z-index: 2;
                             }
 
                             &:focus {
-                                left: 3.5rem;
+                                left: 30%;
+                            }
+                        }
+
+                        @media (max-width:400px) {
+                            left: 1.5rem;
+
+                            &:hover {
+                                left: 20%;
+                                z-index: 2;
+                            }
+
+                            &:focus {
+                                left: 20%;
                             }
                         }
                     }
