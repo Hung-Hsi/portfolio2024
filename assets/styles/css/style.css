@@ -1701,9 +1701,9 @@ body div.experience div.main div.container {
             align-items: center;
   }
 }
-@media (max-width: 420px) {
+@media (max-width: 480px) {
   body div.experience div.main div.container {
-    overflow: hidden;
+    overflow-x: hidden;
   }
 }
 body div.experience div.main div.container div.folderBox {
@@ -1879,11 +1879,23 @@ body div.experience div.main div.container div.folderBox div.folder.works:focus 
     left: 1.5rem;
   }
   body div.experience div.main div.container div.folderBox div.folder.works:hover {
-    left: 3.5rem;
+    left: 30%;
     z-index: 2;
   }
   body div.experience div.main div.container div.folderBox div.folder.works:focus {
-    left: 3.5rem;
+    left: 30%;
+  }
+}
+@media (max-width: 400px) {
+  body div.experience div.main div.container div.folderBox div.folder.works {
+    left: 1.5rem;
+  }
+  body div.experience div.main div.container div.folderBox div.folder.works:hover {
+    left: 20%;
+    z-index: 2;
+  }
+  body div.experience div.main div.container div.folderBox div.folder.works:focus {
+    left: 20%;
   }
 }
 body div.experience div.main div.container div.folderBox div.folder.works {
