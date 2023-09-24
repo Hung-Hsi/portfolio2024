@@ -2898,7 +2898,7 @@ body div.contact div.main div.contactMsg form div.formBtn button {
   border: none;
   border-radius: 1.5rem;
 }
-body div.contact div.main div.contactMsg form div.formBtn button#submit {
+body div.contact div.main div.contactMsg form div.formBtn button#m_submit, body div.contact div.main div.contactMsg form div.formBtn button#submit {
   height: 10%;
   max-height: 3rem;
   min-height: 43px;
@@ -2918,23 +2918,23 @@ body div.contact div.main div.contactMsg form div.formBtn button#submit {
       -ms-flex-align: center;
           align-items: center;
 }
-body div.contact div.main div.contactMsg form div.formBtn button#submit:hover {
+body div.contact div.main div.contactMsg form div.formBtn button#m_submit:hover, body div.contact div.main div.contactMsg form div.formBtn button#submit:hover {
   background-color: rgb(54, 115, 214);
 }
-body div.contact div.main div.contactMsg form div.formBtn button#submit:hover div.btnIcon {
+body div.contact div.main div.contactMsg form div.formBtn button#m_submit:hover div.btnIcon, body div.contact div.main div.contactMsg form div.formBtn button#submit:hover div.btnIcon {
   margin-left: 0.2rem;
 }
-body div.contact div.main div.contactMsg form div.formBtn button#submit span {
+body div.contact div.main div.contactMsg form div.formBtn button#m_submit span, body div.contact div.main div.contactMsg form div.formBtn button#submit span {
   text-wrap: nowrap;
 }
-body div.contact div.main div.contactMsg form div.formBtn button#submit div.btnIcon {
+body div.contact div.main div.contactMsg form div.formBtn button#m_submit div.btnIcon, body div.contact div.main div.contactMsg form div.formBtn button#submit div.btnIcon {
   width: 1.5rem;
   height: 1.5rem;
-  background: url(../images/Icons/submitIcon.png) no-repeat center/contain;
+  background: url(/assets/styles/images/Icons/submitIcon.png) no-repeat center/contain;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
 }
-body div.contact div.main div.contactMsg form div.formBtn button#clear {
+body div.contact div.main div.contactMsg form div.formBtn button#m_clear, body div.contact div.main div.contactMsg form div.formBtn button#clear {
   width: 6rem;
   height: 2.5rem;
   font-size: 1.2rem;
@@ -2950,7 +2950,7 @@ body div.contact div.main div.contactMsg form div.formBtn button#clear {
       -ms-flex-align: center;
           align-items: center;
 }
-body div.contact div.main div.contactMsg form div.formBtn button#clear:hover {
+body div.contact div.main div.contactMsg form div.formBtn button#m_clear:hover, body div.contact div.main div.contactMsg form div.formBtn button#clear:hover {
   color: rgb(255, 255, 255);
   background-color: rgb(63, 69, 0);
 }

@@ -42,6 +42,7 @@ div.contact {
             padding-top: 6.5rem;
             justify-content: center;
             align-items: center;
+
             ::-webkit-scrollbar {
                 width: 0px;
                 height: 0px;
@@ -464,6 +465,7 @@ div.contact {
                         border: none;
                         border-radius: 1.5rem;
 
+                        &#m_submit,
                         &#submit {
                             height: 10%;
                             max-height: 3rem;
@@ -493,11 +495,12 @@ div.contact {
                             div.btnIcon {
                                 width: 1.5rem;
                                 height: 1.5rem;
-                                background: url(../images/Icons/submitIcon.png) no-repeat center/contain;
+                                background: url(/assets/styles/images/Icons/submitIcon.png) no-repeat center/contain;
                                 transition: all .2s;
                             }
                         }
 
+                        &#m_clear,
                         &#clear {
                             width: 6rem;
                             height: 2.5rem;
