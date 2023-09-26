@@ -130,6 +130,10 @@ div.desktop {
                     width: 28rem;
                     height: 116px;
                     font-size: 2.1rem;
+
+                    span:not(.welcomeWords) {
+                        text-wrap: nowrap;
+                    }
                 }
 
                 div.typing-box {

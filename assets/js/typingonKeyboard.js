@@ -3,10 +3,10 @@
 // Wait for the document to be fully loaded
 document.addEventListener("DOMContentLoaded", function () {
     // Set the text to be typed
-    let textToType = "Oh hi ! " + " I'm Chang Hung-Hsi." + " Welcome to my portfolio ! ! !";
+    let textToType = " Welcome to my portfolio ! ! !";
 
     // Get the typing box element
-    const typingTitle = document.getElementById("typingTitle");
+    const typingTitle = document.querySelector(".welcomeWords");
     let index = 0;
 
     // Function to type the text
@@ -30,8 +30,8 @@ document.addEventListener("DOMContentLoaded", function () {
             setTimeout(typeText, 100);
         }
     }
-
-    typeText();
+    // Delay the typing by 3 seconds (3000 milliseconds)
+    setTimeout(typeText, 3000);
 });
 
 // when click on typingBox clear the description
@@ -52,7 +52,7 @@ document.addEventListener('keydown', (e) => {
     const targetKey = Array.from(keys).find(
         (k) => k.textContent === key
     );
-    console.log(targetKey);
+    // console.log(targetKey);
 
     if (targetKey) {
         targetKey.classList.add('key-down');
