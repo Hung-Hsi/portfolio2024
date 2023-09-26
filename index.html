@@ -31,6 +31,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
         integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/splitting@1.0.6/dist/splitting-cells.min.css">
     <link rel="stylesheet" type="text/css"
         href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.20/fullpage.css">
     <link rel="stylesheet" href="/assets/styles/css/fullPage.css">
@@ -40,6 +41,15 @@
 </head>
 
 <body>
+    <section class="loading">
+        <div>
+            <p data-splitting>Loading ......</p>
+            <div class="wrap">
+                <div class="vertical-flip" data-splitting="cells" data-columns="10" data-rows="1" data-image="true">
+                </div>
+            </div>
+        </div>
+    </section>
     <div id="fullpage">
         <div class="desktop section active">
             <div class="wall">
@@ -115,6 +125,9 @@
                         <div class="typing-title" id="typingTitle" contenteditable="false">
                             <!-- The text will be typed here -->
                             <!-- Oh hi ! I'm Chang Hung-Hsi. Welcome to my portfolio ! ! ! -->
+                            <span>Oh hi !</span> <span>I'm Chang Hung-Hsi.</span>
+                            <br>
+                            <span class="welcomeWords"></span>
                         </div>
                         <div class="typing-box" contenteditable="true">
                             <span class="description">Try typing something in lowercase here.</span>
@@ -842,6 +855,10 @@
 
     <!-- jquery -->
     <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <!-- loading -->
+    <script src="https://cdn.jsdelivr.net/npm/splitting@1.0.6/dist/splitting.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" referrerpolicy="no-referrer"></script>
+    <script src="/assets/js/loading.js"></script>
     <!-- fullPage -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.20/fullpage.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.20/fullpage.extensions.min.js"></script>

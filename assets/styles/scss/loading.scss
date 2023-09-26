@@ -1,0 +1,36 @@
+section.loading {
+    width: 100%;
+    height: 100%;
+    background: #000000;
+    display: grid;
+    place-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    animation: name duration timing-function delay iteration-count direction fill-mode;
+
+    &.end {
+        transition: all 1s ease;
+        opacity: 0;
+        pointer-events: none;
+    }
+
+    p {
+        color: white;
+        opacity: 0.5;
+        font-size: 1.5rem;
+    }
+
+    .wrap {
+        outline: 1px solid #efefef;
+        outline-offset: 0.25rem;
+
+        .vertical-flip {
+            width: 12.5rem;
+            height: 1rem;
+            margin-block-start: 0.5rem;
+            background: dodgerblue;
+        }
+    }
+}

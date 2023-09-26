@@ -62,7 +62,6 @@ $(document).ready(function () {
             //         $content.html('<div id="loading">Please try again soon.</div>');
             //     },
             // });
-
         }, 1000); // 模擬 1秒的請求時間
     });
 });
