@@ -258,11 +258,15 @@ div.desktop div.wall div.screen ul.navigator li:not(:last-child) a:hover {
   div.desktop div.wall div.screen div.typing-region div.typing-title {
     margin-top: 3.5rem;
   }
+  div.desktop div.wall div.screen div.typing-region div.typing-title span {
+    text-wrap: nowrap;
+  }
   div.desktop div.wall div.screen div.typing-region div.typing-box {
     height: calc(100% - 7rem - 1.5rem - 3.5rem);
   }
   div.desktop div.wall div.screen div.typing-region div.typing-box span {
     font-size: 0;
+    text-wrap: balance;
   }
 }
 @media (max-width: 480px) {

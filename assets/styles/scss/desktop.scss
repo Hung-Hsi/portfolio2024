@@ -255,6 +255,9 @@ div.desktop {
                 div.typing-region {
                     div.typing-title {
                         margin-top: 3.5rem;
+                        span{
+                            text-wrap: nowrap;
+                        }
                     }
 
                     div.typing-box {
@@ -262,6 +265,7 @@ div.desktop {
 
                         span {
                             font-size: 0;
+                            text-wrap: balance;
                         }
                     }
                 }
