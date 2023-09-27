@@ -1048,8 +1048,11 @@ body div.desktop div.wall div.screen ul.navigator li:not(:last-child) a:hover {
   body div.desktop div.wall div.screen div.typing-region div.typing-title {
     margin-top: 3.5rem;
   }
-  body div.desktop div.wall div.screen div.typing-region div.typing-title span {
+  body div.desktop div.wall div.screen div.typing-region div.typing-title span:not(:last-child) {
     text-wrap: nowrap;
+  }
+  body div.desktop div.wall div.screen div.typing-region div.typing-title span:not(:last-child):last-child {
+    text-wrap: balance;
   }
   body div.desktop div.wall div.screen div.typing-region div.typing-box {
     height: calc(100% - 7rem - 1.5rem - 3.5rem);

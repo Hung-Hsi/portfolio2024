@@ -255,8 +255,13 @@ div.desktop {
                 div.typing-region {
                     div.typing-title {
                         margin-top: 3.5rem;
-                        span{
+
+                        span:not(:last-child) {
                             text-wrap: nowrap;
+
+                            &:last-child {
+                                text-wrap: balance;
+                            }
                         }
                     }
 
