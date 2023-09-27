@@ -27,38 +27,38 @@ div.about {
             div.bdLines {
                 background-color: rgba(244, 199, 81, 1);
                 position: absolute;
-                // transition: opacity cubic-bezier(0.7, 0, 0.84, 0) 1s;  最後急消失
-                transition: opacity cubic-bezier(0, 0.55, 0.45, 1) .6s;
+                transition:
+                    opacity 1s cubic-bezier(0, 0.55, 0.45, 1),
+                    width .6s ease,
+                    height .6s ease;
 
                 @media (max-width:1440px) {
                     opacity: 0;
                 }
 
                 &.long {
-                    width: calc(50% - 1.25rem);
-                    height: 1.25rem;
+                    width: 0;
+                    height: 0;
                 }
 
                 &.short {
-                    width: 1.25rem;
-                    height: 50%;
+                    width: 0;
+                    height: 0;
                 }
 
                 &.topBd {
-                    top: 0rem;
-                    left: -1.25rem;
+                    border-radius: 1rem 0 50% 50%;
 
                     &.long {
-                        left: 0rem;
+                        border-radius: 0 50% 50% 0;
                     }
                 }
 
                 &.bottomBd {
-                    bottom: 0rem;
-                    right: -1.25rem;
+                    border-radius: 50% 50% 1rem 0;
 
                     &.long {
-                        right: 0rem;
+                        border-radius: 50% 0 0 50%;
                     }
                 }
             }
@@ -109,6 +109,7 @@ div.about {
             flex-direction: column;
             justify-content: center;
             gap: 1.5rem;
+            opacity: 0;
 
             @media (max-width:850px) {
                 gap: 0rem;
@@ -423,6 +424,42 @@ div.about {
                         }
                     }
                 }
+            }
+        }
+
+        &.scroll_in {
+            div.container div.bdLines {
+                &.long {
+                    width: calc(50% - 1.25rem);
+                    height: 1.25rem;
+                }
+
+                &.short {
+                    width: 1.25rem;
+                    height: 50%;
+                }
+
+                &.topBd {
+                    top: 0rem;
+                    left: -1.25rem;
+
+                    &.long {
+                        left: 0rem;
+                    }
+                }
+
+                &.bottomBd {
+                    bottom: 0rem;
+                    right: -1.25rem;
+
+                    &.long {
+                        right: 0rem;
+                    }
+                }
+            }
+
+            div.col {
+                opacity: 1;
             }
         }
     }

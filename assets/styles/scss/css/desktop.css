@@ -253,7 +253,6 @@ div.desktop div.wall div.screen ul.navigator li:not(:last-child) a:hover {
     height: 100vh;
   }
   div.desktop div.wall div.screen {
-    height: 65vh;
     top: 15%;
   }
   div.desktop div.wall div.screen div.typing-region div.typing-title {

@@ -40,7 +40,7 @@ div.project div.main div.container {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  overflow: unset;
+  overflow: hidden;
 }
 @media (max-width: 1280px) {
   div.project div.main div.container {
@@ -84,6 +84,12 @@ div.project div.main div.container div.showcase {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+  -webkit-transition: -webkit-transform 0.8s cubic-bezier(0, 0.55, 0.45, 1);
+  transition: -webkit-transform 0.8s cubic-bezier(0, 0.55, 0.45, 1);
+  transition: transform 0.8s cubic-bezier(0, 0.55, 0.45, 1);
+  transition: transform 0.8s cubic-bezier(0, 0.55, 0.45, 1), -webkit-transform 0.8s cubic-bezier(0, 0.55, 0.45, 1);
   border: 1.3rem solid transparent;
   background: radial-gradient(ellipse 100% 90% at center, rgb(38, 216, 255), rgba(38, 216, 255, 0));
 }
@@ -312,4 +318,8 @@ div.project div.main div.container div.showcase span.webName {
     height: 75vh;
     border-radius: 0;
   }
+}
+div.project div.main.scroll_in div.container div.showcase {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
 }

@@ -120,6 +120,12 @@ div.contact div.main div.contactInfo {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: -webkit-transform 0.8s cubic-bezier(0, 0.55, 0.45, 1);
+  transition: -webkit-transform 0.8s cubic-bezier(0, 0.55, 0.45, 1);
+  transition: transform 0.8s cubic-bezier(0, 0.55, 0.45, 1);
+  transition: transform 0.8s cubic-bezier(0, 0.55, 0.45, 1), -webkit-transform 0.8s cubic-bezier(0, 0.55, 0.45, 1);
 }
 @media (max-width: 1200px) {
   div.contact div.main div.contactInfo {
@@ -369,6 +375,12 @@ div.contact div.main div.contactMsg {
           justify-content: space-between;
   text-align: left;
   position: relative;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: -webkit-transform 0.8s cubic-bezier(0, 0.55, 0.45, 1);
+  transition: -webkit-transform 0.8s cubic-bezier(0, 0.55, 0.45, 1);
+  transition: transform 0.8s cubic-bezier(0, 0.55, 0.45, 1);
+  transition: transform 0.8s cubic-bezier(0, 0.55, 0.45, 1), -webkit-transform 0.8s cubic-bezier(0, 0.55, 0.45, 1);
 }
 @media (max-width: 992px) {
   div.contact div.main div.contactMsg {
@@ -400,6 +412,13 @@ div.contact div.main div.contactMsg::before {
   bottom: 20%;
   right: 7.5%;
   z-index: 1;
+  opacity: 0;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: opacity 0.8s cubic-bezier(0, 0.55, 0.45, 1), -webkit-transform 2s cubic-bezier(0.34, 1.56, 0.66, 1.6);
+  transition: opacity 0.8s cubic-bezier(0, 0.55, 0.45, 1), -webkit-transform 2s cubic-bezier(0.34, 1.56, 0.66, 1.6);
+  transition: opacity 0.8s cubic-bezier(0, 0.55, 0.45, 1), transform 2s cubic-bezier(0.34, 1.56, 0.66, 1.6);
+  transition: opacity 0.8s cubic-bezier(0, 0.55, 0.45, 1), transform 2s cubic-bezier(0.34, 1.56, 0.66, 1.6), -webkit-transform 2s cubic-bezier(0.34, 1.56, 0.66, 1.6);
 }
 div.contact div.main div.contactMsg h3 {
   font-weight: 500;
@@ -610,4 +629,17 @@ div.contact div.main div.contactMsg form div.formBtn button#m_clear, div.contact
 div.contact div.main div.contactMsg form div.formBtn button#m_clear:hover, div.contact div.main div.contactMsg form div.formBtn button#clear:hover {
   color: rgb(255, 255, 255);
   background-color: rgb(63, 69, 0);
+}
+div.contact div.main.scroll_in div.contactInfo {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+div.contact div.main.scroll_in div.contactMsg {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+div.contact div.main.scroll_in div.contactMsg::before {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  opacity: 1;
 }

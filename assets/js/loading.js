@@ -27,4 +27,4 @@ tl
 setTimeout(function () {
     let loading = document.querySelector(".loading");
     loading.classList.add("end");
-}, 3000); // 模擬 3秒的請求時間
+}, 2500); // 模擬 3秒的請求時間

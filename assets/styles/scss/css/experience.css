@@ -15,6 +15,93 @@ div.experience div.main {
           align-items: flex-end;
   overflow: hidden;
 }
+div.experience div.main.scroll_in div.container div.folderBox div.folder.bgFolder {
+  left: 0;
+  opacity: 1;
+  -webkit-transition: all 0.6s cubic-bezier(0, 0.55, 0.45, 1);
+  transition: all 0.6s cubic-bezier(0, 0.55, 0.45, 1);
+}
+div.experience div.main.scroll_in div.container div.folderBox div.folder.education {
+  left: 0;
+  opacity: 1;
+  -webkit-transition: all 0.6s cubic-bezier(0, 0.55, 0.45, 1);
+  transition: all 0.6s cubic-bezier(0, 0.55, 0.45, 1);
+}
+div.experience div.main.scroll_in div.container div.folderBox div.folder.works {
+  left: 10%;
+  opacity: 1;
+  -webkit-transition: all 1s cubic-bezier(0, 0.55, 0.45, 1);
+  transition: all 1s cubic-bezier(0, 0.55, 0.45, 1);
+}
+@media (max-width: 800px) {
+  div.experience div.main.scroll_in div.container div.folderBox div.folder.works {
+    left: 11.5%;
+  }
+  div.experience div.main.scroll_in div.container div.folderBox div.folder.works:hover {
+    left: 50%;
+  }
+  div.experience div.main.scroll_in div.container div.folderBox div.folder.works:focus {
+    left: 50%;
+  }
+}
+@media (max-width: 756px) {
+  div.experience div.main.scroll_in div.container div.folderBox div.folder.works {
+    left: 12.5%;
+  }
+  div.experience div.main.scroll_in div.container div.folderBox div.folder.works:hover {
+    left: 50%;
+  }
+  div.experience div.main.scroll_in div.container div.folderBox div.folder.works:focus {
+    left: 50%;
+  }
+}
+@media (max-width: 650px) {
+  div.experience div.main.scroll_in div.container div.folderBox div.folder.works {
+    left: 13.5%;
+  }
+  div.experience div.main.scroll_in div.container div.folderBox div.folder.works:hover {
+    left: 46.5%;
+  }
+  div.experience div.main.scroll_in div.container div.folderBox div.folder.works:focus {
+    left: 46.5%;
+  }
+}
+@media (max-width: 576px) {
+  div.experience div.main.scroll_in div.container div.folderBox div.folder.works {
+    left: 6.5rem;
+  }
+  div.experience div.main.scroll_in div.container div.folderBox div.folder.works:hover {
+    left: 12.5rem;
+    z-index: 2;
+  }
+  div.experience div.main.scroll_in div.container div.folderBox div.folder.works:focus {
+    left: 12.5rem;
+  }
+}
+@media (max-width: 480px) {
+  div.experience div.main.scroll_in div.container div.folderBox div.folder.works {
+    left: 1.5rem;
+  }
+  div.experience div.main.scroll_in div.container div.folderBox div.folder.works:hover {
+    left: 30%;
+    z-index: 2;
+  }
+  div.experience div.main.scroll_in div.container div.folderBox div.folder.works:focus {
+    left: 30%;
+  }
+}
+@media (max-width: 400px) {
+  div.experience div.main.scroll_in div.container div.folderBox div.folder.works {
+    left: 1.5rem;
+  }
+  div.experience div.main.scroll_in div.container div.folderBox div.folder.works:hover {
+    left: 20%;
+    z-index: 2;
+  }
+  div.experience div.main.scroll_in div.container div.folderBox div.folder.works:focus {
+    left: 20%;
+  }
+}
 div.experience div.main div.container {
   padding-top: 3rem;
   padding-bottom: 0;
@@ -67,7 +154,8 @@ div.experience div.main div.container div.folderBox div.folder.bgFolder {
   position: absolute;
   height: 100%;
   bottom: 0%;
-  left: 0;
+  left: -50%;
+  opacity: 0;
   background: url(/assets/styles/images/bg/lclipgray1.png) no-repeat center/contain;
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
@@ -95,7 +183,8 @@ div.experience div.main div.container div.folderBox div.folder.education {
   position: absolute;
   height: 100%;
   bottom: 0%;
-  left: 0;
+  left: -50%;
+  opacity: 0;
   background: url(/assets/styles/images/bg/lclipgray1.png) no-repeat center/contain;
 }
 div.experience div.main div.container div.folderBox div.folder.works {
@@ -103,7 +192,8 @@ div.experience div.main div.container div.folderBox div.folder.works {
   position: absolute;
   height: 100%;
   bottom: 8%;
-  left: 10%;
+  left: 100%;
+  opacity: 0;
   background: url(/assets/styles/images/bg/lclipwh.png) no-repeat center/contain;
   -webkit-transform: rotate(15deg);
           transform: rotate(15deg);
@@ -156,75 +246,6 @@ div.experience div.main div.container div.folderBox div.folder.works:focus div.a
           transform: rotate(0);
   -webkit-transition: all cubic-bezier(0.85, 0, 0.15, 1) 1s;
   transition: all cubic-bezier(0.85, 0, 0.15, 1) 1s;
-}
-@media (max-width: 800px) {
-  div.experience div.main div.container div.folderBox div.folder.works {
-    left: 11.5%;
-  }
-  div.experience div.main div.container div.folderBox div.folder.works:hover {
-    left: 50%;
-  }
-  div.experience div.main div.container div.folderBox div.folder.works:focus {
-    left: 50%;
-  }
-}
-@media (max-width: 756px) {
-  div.experience div.main div.container div.folderBox div.folder.works {
-    left: 12.5%;
-  }
-  div.experience div.main div.container div.folderBox div.folder.works:hover {
-    left: 50%;
-  }
-  div.experience div.main div.container div.folderBox div.folder.works:focus {
-    left: 50%;
-  }
-}
-@media (max-width: 650px) {
-  div.experience div.main div.container div.folderBox div.folder.works {
-    left: 13.5%;
-  }
-  div.experience div.main div.container div.folderBox div.folder.works:hover {
-    left: 46.5%;
-  }
-  div.experience div.main div.container div.folderBox div.folder.works:focus {
-    left: 46.5%;
-  }
-}
-@media (max-width: 576px) {
-  div.experience div.main div.container div.folderBox div.folder.works {
-    left: 6.5rem;
-  }
-  div.experience div.main div.container div.folderBox div.folder.works:hover {
-    left: 12.5rem;
-    z-index: 2;
-  }
-  div.experience div.main div.container div.folderBox div.folder.works:focus {
-    left: 12.5rem;
-  }
-}
-@media (max-width: 480px) {
-  div.experience div.main div.container div.folderBox div.folder.works {
-    left: 1.5rem;
-  }
-  div.experience div.main div.container div.folderBox div.folder.works:hover {
-    left: 30%;
-    z-index: 2;
-  }
-  div.experience div.main div.container div.folderBox div.folder.works:focus {
-    left: 30%;
-  }
-}
-@media (max-width: 400px) {
-  div.experience div.main div.container div.folderBox div.folder.works {
-    left: 1.5rem;
-  }
-  div.experience div.main div.container div.folderBox div.folder.works:hover {
-    left: 20%;
-    z-index: 2;
-  }
-  div.experience div.main div.container div.folderBox div.folder.works:focus {
-    left: 20%;
-  }
 }
 div.experience div.main div.container div.folderBox div.folder.works {
   color: black;

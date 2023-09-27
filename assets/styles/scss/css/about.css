@@ -37,8 +37,8 @@ div.about div.main div.container {
 div.about div.main div.container div.bdLines {
   background-color: rgb(244, 199, 81);
   position: absolute;
-  -webkit-transition: opacity cubic-bezier(0, 0.55, 0.45, 1) 0.6s;
-  transition: opacity cubic-bezier(0, 0.55, 0.45, 1) 0.6s;
+  -webkit-transition: opacity 1s cubic-bezier(0, 0.55, 0.45, 1), width 0.6s ease, height 0.6s ease;
+  transition: opacity 1s cubic-bezier(0, 0.55, 0.45, 1), width 0.6s ease, height 0.6s ease;
 }
 @media (max-width: 1440px) {
   div.about div.main div.container div.bdLines {
@@ -46,26 +46,24 @@ div.about div.main div.container div.bdLines {
   }
 }
 div.about div.main div.container div.bdLines.long {
-  width: calc(50% - 1.25rem);
-  height: 1.25rem;
+  width: 0;
+  height: 0;
 }
 div.about div.main div.container div.bdLines.short {
-  width: 1.25rem;
-  height: 50%;
+  width: 0;
+  height: 0;
 }
 div.about div.main div.container div.bdLines.topBd {
-  top: 0rem;
-  left: -1.25rem;
+  border-radius: 1rem 0 50% 50%;
 }
 div.about div.main div.container div.bdLines.topBd.long {
-  left: 0rem;
+  border-radius: 0 50% 50% 0;
 }
 div.about div.main div.container div.bdLines.bottomBd {
-  bottom: 0rem;
-  right: -1.25rem;
+  border-radius: 50% 50% 1rem 0;
 }
 div.about div.main div.container div.bdLines.bottomBd.long {
-  right: 0rem;
+  border-radius: 50% 0 0 50%;
 }
 div.about div.main div.slide {
   display: none;
@@ -125,6 +123,7 @@ div.about div.main div.col {
       -ms-flex-pack: center;
           justify-content: center;
   gap: 1.5rem;
+  opacity: 0;
 }
 @media (max-width: 850px) {
   div.about div.main div.col {
@@ -452,4 +451,29 @@ div.about div.main div.col div.aboutBlock.software div.bgContainer div:hover {
 }
 div.about div.main div.col div.aboutBlock.software div.bgContainer div img {
   height: 100%;
+}
+div.about div.main.scroll_in div.container div.bdLines.long {
+  width: calc(50% - 1.25rem);
+  height: 1.25rem;
+}
+div.about div.main.scroll_in div.container div.bdLines.short {
+  width: 1.25rem;
+  height: 50%;
+}
+div.about div.main.scroll_in div.container div.bdLines.topBd {
+  top: 0rem;
+  left: -1.25rem;
+}
+div.about div.main.scroll_in div.container div.bdLines.topBd.long {
+  left: 0rem;
+}
+div.about div.main.scroll_in div.container div.bdLines.bottomBd {
+  bottom: 0rem;
+  right: -1.25rem;
+}
+div.about div.main.scroll_in div.container div.bdLines.bottomBd.long {
+  right: 0rem;
+}
+div.about div.main.scroll_in div.col {
+  opacity: 1;
 }
