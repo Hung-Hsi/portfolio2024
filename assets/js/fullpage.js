@@ -39,7 +39,6 @@ new fullpage('#fullpage', {
     credits: { enabled: true, label: '', position: 'right' },
 
     afterLoad: function (origin, destination, direction, trigger) {
-        console.log(destination.item);
         // 檢查是否進入某section部分
         if (destination.anchor === 'about') {
             destination.item.querySelector('.main').classList.add('scroll_in');
