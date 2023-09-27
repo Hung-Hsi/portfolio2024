@@ -19,19 +19,16 @@ div.experience {
                 &.bgFolder {
                     left: 0;
                     opacity: 1;
-                    transition: opacity .6s cubic-bezier(0, 0.55, 0.45, 1);
                 }
 
                 &.education {
                     left: 0;
                     opacity: 1;
-                    transition: opacity .6s cubic-bezier(0, 0.55, 0.45, 1);
                 }
 
                 &.works {
                     left: 10%;
                     opacity: 1;
-                    transition: opacity 1s cubic-bezier(0, 0.55, 0.45, 1);
 
                     @media (max-width:800px) {
                         left: 11.5%;
@@ -153,6 +150,7 @@ div.experience {
                         opacity: 0;
                         background: url(/assets/styles/images/bg/lclipgray1.png) no-repeat center/contain;
                         transform: rotate(180deg);
+                        transition: all .6s cubic-bezier(0, 0.55, 0.45, 1);
 
                         &::before {
                             content: '';
@@ -181,6 +179,7 @@ div.experience {
                         left: -50%;
                         opacity: 0;
                         background: url(/assets/styles/images/bg/lclipgray1.png) no-repeat center/contain;
+                        transition: opacity .6s cubic-bezier(0, 0.55, 0.45, 1);
                     }
 
                     &.works {
@@ -193,7 +192,10 @@ div.experience {
                         background: url(/assets/styles/images/bg/lclipwh.png) no-repeat center/contain;
 
                         transform: rotate(15deg);
-                        transition: all ease 1s;
+                        transition:
+                            opacity 1s cubic-bezier(0, 0.55, 0.45, 1),
+                            transform 1s cubic-bezier(0, 0.55, 0.45, 1),
+                            left 1s ease;
 
                         position: relative;
 
@@ -208,6 +210,7 @@ div.experience {
                             border-right: 5px dotted rgba(244, 199, 81);
                             border-radius: 50%;
                             padding-right: 1%;
+                            transition: all cubic-bezier(0.85, 0, 0.15, 1) 1s;
                         }
 
                         &:hover {
@@ -215,12 +218,12 @@ div.experience {
                             transform: rotate(0deg);
                             left: 51%;
                             bottom: 0%;
-                            transition: all cubic-bezier(0.85, 0, 0.15, 1) 1s;
 
                             div.arrow {
+                                top: 21%;
+                                right: 20%;
                                 opacity: 0;
                                 transform: rotate(0);
-                                transition: all cubic-bezier(0.85, 0, 0.15, 1) 1s;
                             }
                         }
 
@@ -230,12 +233,12 @@ div.experience {
                             left: 51%;
                             bottom: 0%;
                             z-index: 2;
-                            transition: all cubic-bezier(0.85, 0, 0.15, 1) 1s;
 
                             div.arrow {
+                                top: 21%;
+                                right: 20%;
                                 opacity: 0;
                                 transform: rotate(0);
-                                transition: all cubic-bezier(0.85, 0, 0.15, 1) 1s;
                             }
                         }
                     }
