@@ -31,5 +31,5 @@ section.loading .wrap .vertical-flip {
   height: 1rem;
   -webkit-margin-before: 0.5rem;
           margin-block-start: 0.5rem;
-  background: dodgerblue;
+  background: rgb(173, 203, 238);
 }
