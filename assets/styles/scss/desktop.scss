@@ -268,7 +268,7 @@ div.desktop {
             }
         }
 
-        @media (max-width:495px) {
+        @media (max-width:480px) {
             div.screen {
                 div.typing-region {
                     div.typing-title {
@@ -277,6 +277,21 @@ div.desktop {
 
                     div.typing-box {
                         height: calc(100% - 12rem - 3rem);
+                    }
+                }
+            }
+        }
+
+        @media (max-width:412px) {
+            div.screen {
+                div.typing-region {
+                    div.typing-title {
+                        margin-top: 1.5rem;
+                        height: 201px;
+                    }
+
+                    div.typing-box {
+                        height: calc(100% - 12rem - 4rem);
                     }
                 }
             }

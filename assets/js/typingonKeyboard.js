@@ -3,7 +3,7 @@
 // Wait for the document to be fully loaded
 document.addEventListener("DOMContentLoaded", function () {
     // Set the text to be typed
-    let textToType = " Welcome to my portfolio ! ! !";
+    let textToType = " Welcome to my portfolio.";
 
     // Get the typing box element
     const typingTitle = document.querySelector(".welcomeWords");
@@ -13,7 +13,6 @@ document.addEventListener("DOMContentLoaded", function () {
     function typeText() {
         if (index < textToType.length) {
             const key = textToType[index].toUpperCase();
-            // const targetKey = document.querySelector(`[data-key="${key}"]`);
             const targetKey = Array.from(keys).find(
                 (k) => k.textContent === key);
 

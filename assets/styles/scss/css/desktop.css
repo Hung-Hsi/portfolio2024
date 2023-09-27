@@ -265,12 +265,21 @@ div.desktop div.wall div.screen ul.navigator li:not(:last-child) a:hover {
     font-size: 0;
   }
 }
-@media (max-width: 495px) {
+@media (max-width: 480px) {
   div.desktop div.wall div.screen div.typing-region div.typing-title {
     height: 163px;
   }
   div.desktop div.wall div.screen div.typing-region div.typing-box {
     height: calc(100% - 12rem - 3rem);
+  }
+}
+@media (max-width: 412px) {
+  div.desktop div.wall div.screen div.typing-region div.typing-title {
+    margin-top: 1.5rem;
+    height: 201px;
+  }
+  div.desktop div.wall div.screen div.typing-region div.typing-box {
+    height: calc(100% - 12rem - 4rem);
   }
 }
 div.desktop div.table {

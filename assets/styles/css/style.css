@@ -1052,15 +1052,25 @@ body div.desktop div.wall div.screen ul.navigator li:not(:last-child) a:hover {
     height: calc(100% - 7rem - 1.5rem - 3.5rem);
   }
   body div.desktop div.wall div.screen div.typing-region div.typing-box span {
+    width: 100%;
     font-size: 0;
   }
 }
-@media (max-width: 495px) {
+@media (max-width: 480px) {
   body div.desktop div.wall div.screen div.typing-region div.typing-title {
     height: 163px;
   }
   body div.desktop div.wall div.screen div.typing-region div.typing-box {
     height: calc(100% - 12rem - 3rem);
+  }
+}
+@media (max-width: 412px) {
+  body div.desktop div.wall div.screen div.typing-region div.typing-title {
+    margin-top: 1.5rem;
+    height: 201px;
+  }
+  body div.desktop div.wall div.screen div.typing-region div.typing-box {
+    height: calc(100% - 12rem - 4rem);
   }
 }
 body div.desktop div.table {
