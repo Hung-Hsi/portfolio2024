@@ -1,4 +1,3 @@
-// 1200px 以下要變
 div.experience {
     position: relative;
 
@@ -20,19 +19,19 @@ div.experience {
                 &.bgFolder {
                     left: 0;
                     opacity: 1;
-                    transition: all .6s cubic-bezier(0, 0.55, 0.45, 1);
+                    transition: opacity .6s cubic-bezier(0, 0.55, 0.45, 1);
                 }
 
                 &.education {
                     left: 0;
                     opacity: 1;
-                    transition: all .6s cubic-bezier(0, 0.55, 0.45, 1);
+                    transition: opacity .6s cubic-bezier(0, 0.55, 0.45, 1);
                 }
 
                 &.works {
                     left: 10%;
                     opacity: 1;
-                    transition: all 1s cubic-bezier(0, 0.55, 0.45, 1);
+                    transition: opacity 1s cubic-bezier(0, 0.55, 0.45, 1);
 
                     @media (max-width:800px) {
                         left: 11.5%;

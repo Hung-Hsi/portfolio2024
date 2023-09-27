@@ -67,7 +67,6 @@ body {
         color: white;
 
         div.main {
-            // border: 1px solid #fff;
             padding: 0 1.5rem;
             margin: auto;
             width: 100%;
@@ -102,7 +101,6 @@ body {
                 }
 
                 @media (max-width:576px) {
-                    // margin: .5rem 2rem 0 0;
 
                     h2 {
                         font-size: 3rem;
@@ -115,7 +113,6 @@ body {
             }
 
             div.container {
-                // border: 1px solid #eeff00;
                 padding: 3rem 0rem 0rem;
                 position: relative;
                 width: 90%;
@@ -132,7 +129,6 @@ body {
 
                 @media (max-width:1280px) {
                     transform: scale(.8);
-                    // min-width: 1200px;
                 }
 
                 @media (max-width:1200px) {
