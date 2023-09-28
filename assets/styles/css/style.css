@@ -704,13 +704,17 @@ body div.section div.main div.title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 body div.section div.main div.title h2 {
   font-size: 4.5rem;
 }
 body div.section div.main div.title div {
   margin-left: 1rem;
-  height: 4.5rem;
+  width: 3rem;
+  height: 3rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -722,14 +726,11 @@ body div.section div.main div.title div {
           align-items: center;
 }
 body div.section div.main div.title div img {
-  height: 100%;
+  width: 100%;
 }
 @media (max-width: 576px) {
   body div.section div.main div.title h2 {
     font-size: 3rem;
-  }
-  body div.section div.main div.title div {
-    height: 3rem;
   }
 }
 body div.section div.main div.container {
