@@ -1432,6 +1432,7 @@ body div.about div.main div.col div.aboutBlock:not(.cvDownload):hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
   border: 3px solid rgba(255, 255, 255, 0.6196078431);
+  z-index: 3;
 }
 body div.about div.main div.col div.aboutBlock:not(.cvDownload):hover h3 {
   color: rgb(111, 217, 255);
@@ -1518,21 +1519,6 @@ body div.about div.main div.col div.aboutBlock.cvDownload {
       -ms-flex-align: center;
           align-items: center;
 }
-body div.about div.main div.col div.aboutBlock.cvDownload:hover {
-  border: 3px solid rgba(255, 255, 255, 0.6196078431);
-}
-body div.about div.main div.col div.aboutBlock.cvDownload:hover div.cardContainer:hover {
-  -webkit-transform: rotateY(0deg);
-          transform: rotateY(0deg);
-  -webkit-animation: unset;
-          animation: unset;
-}
-body div.about div.main div.col div.aboutBlock.cvDownload:hover div.cardContainer.flipped:hover {
-  -webkit-transform: rotateY(180deg);
-          transform: rotateY(180deg);
-  -webkit-animation: unset;
-          animation: unset;
-}
 body div.about div.main div.col div.aboutBlock.cvDownload div.cardContainer,
 body div.about div.main div.col div.aboutBlock.cvDownload .card {
   width: 100%;
@@ -1560,10 +1546,6 @@ body div.about div.main div.col div.aboutBlock.cvDownload div.cardContainer {
   -webkit-box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
           box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
   cursor: pointer;
-  -webkit-animation: CVFlipped 4s ease infinite;
-          animation: CVFlipped 4s ease infinite;
-  -webkit-transform: rotateY(30deg);
-          transform: rotateY(30deg);
 }
 body div.about div.main div.col div.aboutBlock.cvDownload div.cardContainer div.card {
   z-index: 1;
@@ -1572,6 +1554,13 @@ body div.about div.main div.col div.aboutBlock.cvDownload div.cardContainer div.
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+body div.about div.main div.col div.aboutBlock.cvDownload div.cardContainer div.card.front::before {
+  content: "點擊空白處翻面";
+  position: absolute;
+  font-size: 1rem;
+  right: 5%;
+  bottom: -37%;
 }
 body div.about div.main div.col div.aboutBlock.cvDownload div.cardContainer div.card.back {
   display: none;
@@ -1609,10 +1598,8 @@ body div.about div.main div.col div.aboutBlock.cvDownload div.cardContainer div.
   height: 100%;
 }
 body div.about div.main div.col div.aboutBlock.cvDownload div.cardContainer.flipped {
-  -webkit-transform: rotateY(210deg);
-          transform: rotateY(210deg);
-  -webkit-animation: CVFlippedBack 4s ease infinite;
-          animation: CVFlippedBack 4s ease infinite;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
 }
 body div.about div.main div.col div.aboutBlock.cvDownload div.cardContainer.flipped div.front {
   display: none;
@@ -1621,6 +1608,23 @@ body div.about div.main div.col div.aboutBlock.cvDownload div.cardContainer.flip
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+body div.about div.main div.col div.aboutBlock.cvDownload div.cardContainer.flipped div.back::before {
+  content: "click to flip";
+  position: absolute;
+  font-size: 1rem;
+  right: 5%;
+  bottom: -37%;
+}
+body div.about div.main div.col div.aboutBlock.cvDownload:hover {
+  border: 3px solid rgba(255, 255, 255, 0.6196078431);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  z-index: 3;
+}
+body div.about div.main div.col div.aboutBlock.cvDownload:hover div.cardContainer .front::before,
+body div.about div.main div.col div.aboutBlock.cvDownload:hover div.cardContainer .back::before {
+  color: orange;
 }
 body div.about div.main div.col div.aboutBlock.skills {
   -ms-flex-pack: distribute;

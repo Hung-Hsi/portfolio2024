@@ -141,6 +141,7 @@ div.about {
                 &:not(.cvDownload):hover {
                     transform: scale(1.1);
                     border: 3px solid #ffffff9e;
+                    z-index: 3;
 
                     h3 {
                         color: rgb(111, 217, 255);
@@ -234,22 +235,6 @@ div.about {
                     justify-content: center;
                     align-items: center;
 
-                    &:hover {
-                        border: 3px solid #ffffff9e;
-
-                        div.cardContainer {
-                            &:hover {
-                                transform: rotateY(0deg);
-                                animation: unset;
-                            }
-
-                            &.flipped:hover {
-                                transform: rotateY(180deg);
-                                animation: unset;
-                            }
-                        }
-                    }
-
                     div.cardContainer,
                     .card {
                         width: 100%;
@@ -267,14 +252,20 @@ div.about {
                         transition: transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
                         box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
                         cursor: pointer;
-                        animation: CVFlipped 4s ease infinite;
-                        transform: rotateY(30deg);
 
                         div.card {
                             z-index: 1;
 
                             &.front {
                                 display: flex;
+
+                                &::before {
+                                    content: '點擊空白處翻面';
+                                    position: absolute;
+                                    font-size: 1rem;
+                                    right: 5%;
+                                    bottom: -37%;
+                                }
                             }
 
                             &.back {
@@ -309,8 +300,7 @@ div.about {
                         }
 
                         &.flipped {
-                            transform: rotateY(210deg);
-                            animation: CVFlippedBack 4s ease infinite;
+                            transform: rotateY(180deg);
 
                             div.front {
                                 display: none;
@@ -318,9 +308,30 @@ div.about {
 
                             div.back {
                                 display: flex;
+
+                                &::before {
+                                    content: 'click to flip';
+                                    position: absolute;
+                                    font-size: 1rem;
+                                    right: 5%;
+                                    bottom: -37%;
+                                }
                             }
                         }
 
+                    }
+
+                    &:hover {
+                        border: 3px solid #ffffff9e;
+                        transform: scale(1.1);
+                        z-index: 3;
+
+                        div.cardContainer .front,
+                        div.cardContainer .back {
+                            &::before {
+                                color: orange;
+                            }
+                        }
                     }
                 }
 
