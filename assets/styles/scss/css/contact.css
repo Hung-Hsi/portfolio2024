@@ -360,6 +360,7 @@ div.contact div.main div.contactMsg {
   width: 45%;
   min-width: 350px;
   height: 85%;
+  max-height: 800px;
   background: rgb(13, 19, 0);
   border: 0.5rem solid rgb(255, 178, 88);
   border-radius: 1rem;
