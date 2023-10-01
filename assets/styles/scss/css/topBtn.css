@@ -38,20 +38,6 @@ div.btnSlider a.topBtn div {
   -webkit-backdrop-filter: blur(1px);
           backdrop-filter: blur(1px);
 }
-div.btnSlider a.topBtn div::before {
-  content: "to top";
-  color: #fff;
-  font-size: 1.25rem;
-  font-weight: 600;
-  position: absolute;
-  top: 49.5%;
-  left: 23%;
-}
-@media (max-width: 576px) {
-  div.btnSlider a.topBtn div::before {
-    font-size: 0rem;
-  }
-}
 div.btnSlider a.topBtn div img {
   margin: auto;
   width: 90%;

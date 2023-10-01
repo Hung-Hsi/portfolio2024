@@ -38,20 +38,6 @@ div.btnSlider {
             background: radial-gradient(ellipse 45% 15% at 50% 83%, #ff0, #ffffff10);
             backdrop-filter: blur(1px);
 
-            &::before {
-                content: 'to top';
-                color: #fff;
-                font-size: 1.25rem;
-                font-weight: 600;
-                position: absolute;
-                top: 49.5%;
-                left: 23%;
-
-                @media (max-width:576px) {
-                    font-size: 0rem;
-                }
-            }
-
             img {
                 margin: auto;
                 width: 90%;
