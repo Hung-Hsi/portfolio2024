@@ -22,7 +22,7 @@ $(document).ready(function () {
 
             // 創建內容元素
             const $contentElement = $('<a target="_blank" href="' + webUrl + '" rel="noopener noreferrer"</a>').html(`<picture>
-            <source media="(max-width:1280px)" srcset="/assets/styles/images/${photoId}1280.png">
+            <source media="(max-width:1280px)" srcset="/assets/styles/images/projects/${photoId}1280.png">
             <img src="/assets/styles/images/${photoId}.png" alt="${photoId}">
             </picture>`);
 
