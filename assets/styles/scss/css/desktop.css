@@ -152,6 +152,7 @@ div.desktop div.wall div.screen div.typing-region div.typing-box::-webkit-scroll
 }
 div.desktop div.wall div.screen div.typing-region div.typing-box span {
   opacity: 0.3;
+  font-size: 1.5rem;
 }
 div.desktop div.wall div.screen ul.navigator {
   padding: 2rem 2rem 0 0;
